@@ -1,5 +1,5 @@
 // tabela dos próximos jogos
-import { esc, escudo, nomeTodo, dataBloco } from '../utilidades/html.js';
+import { esc, escudo, nomeTodo, dataBloco, trocarHtml } from '../utilidades/html.js';
 import { hora, falta } from '../utilidades/datas.js';
 import { situacaoTexto, foraDoAr, corDe } from '../dados/jogos.js';
 import { meus } from '../../times/index.js';
@@ -23,9 +23,9 @@ function linha(e, i) {
 
 export function desenharProximos(lista, temDados) {
   const alvo = document.querySelector('#proximos');
-  if (!temDados) { alvo.innerHTML = ''; return; }
-  alvo.innerHTML = lista.length
+  if (!temDados) { trocarHtml(alvo, ''); return; }
+  trocarHtml(alvo, lista.length
     ? `<div class="painel-cabeca cabeca-agenda"><span>data</span><span>hora</span><span>jogo</span><span>campeonato</span></div>
        ${lista.map(linha).join('')}`
-    : '<div class="painel-vazio">nenhum jogo marcado por enquanto.</div>';
+    : '<div class="painel-vazio">nenhum jogo marcado por enquanto.</div>');
 }

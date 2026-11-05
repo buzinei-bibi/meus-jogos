@@ -565,7 +565,14 @@ function dataBloco(d) {
   return `<span class="data-bloco"><small>${esc(topo)}</small><b>${esc(fmtDiaMes.format(d))}</b></span>`;
 }
 
-return { esc, escudo, dataBloco, nomeTodo };
+// troca o conteúdo só se mudou: redesenhar igual recriava os escudos e a tela piscava
+function trocarHtml(alvo, html) {
+  if (!alvo || alvo._html === html) return;
+  alvo._html = html;
+  alvo.innerHTML = html;
+}
+
+return { esc, escudo, dataBloco, trocarHtml, nomeTodo };
 })();
 
 // ===== scripts/tela/hoje.js =====
@@ -573,7 +580,7 @@ const m_scripts_tela_hoje = (() => {
 // cards dos jogos de hoje (placar em formato de tv: um time por linha)
 const { estado } = m_scripts_estado;
 const { meus } = m_times_index;
-const { esc, escudo, nomeTodo } = m_scripts_utilidades_html;
+const { esc, escudo, nomeTodo, trocarHtml } = m_scripts_utilidades_html;
 const { hora, falta, diaRelativo } = m_scripts_utilidades_datas;
 const { resultadoPara, situacaoTexto, foraDoAr, corDe, ligaTexto } = m_scripts_dados_jogos;
 
@@ -630,8 +637,8 @@ function semJogo(proximo) {
 
 function desenharHoje(doDia, proximoJogo) {
   const alvo = document.querySelector('#hoje');
-  if (doDia.length) alvo.innerHTML = doDia.map(cartao).join('');
-  else alvo.innerHTML = estado.eventos.size ? semJogo(proximoJogo) : '<div class="vazio esqueleto"></div>';
+  if (doDia.length) trocarHtml(alvo, doDia.map(cartao).join(''));
+  else trocarHtml(alvo, estado.eventos.size ? semJogo(proximoJogo) : '<div class="vazio esqueleto"></div>');
 }
 
 return { desenharHoje };
@@ -642,7 +649,7 @@ const m_scripts_tela_times = (() => {
 // cards de "meus times" (servem de filtro): nome, dia/hora e contra quem joga
 const { estado } = m_scripts_estado;
 const { times, todos } = m_times_index;
-const { esc, escudo, nomeTodo } = m_scripts_utilidades_html;
+const { esc, escudo, nomeTodo, trocarHtml } = m_scripts_utilidades_html;
 const { hora, diaRelativo } = m_scripts_utilidades_datas;
 const { proximoDe } = m_scripts_dados_jogos;
 
@@ -669,7 +676,7 @@ function desenharTimes() {
         </span>
       </button>`);
   });
-  document.querySelector('#filtros').innerHTML = cards.join('');
+  trocarHtml(document.querySelector('#filtros'), cards.join(''));
 }
 
 return { desenharTimes };
@@ -681,7 +688,7 @@ const m_scripts_tela_classificacao = (() => {
 // com um time escolhido no filtro, abre também a disputa: quem está colado na tabela (pro líder, o 2º colocado)
 const { estado } = m_scripts_estado;
 const { times } = m_times_index;
-const { esc } = m_scripts_utilidades_html;
+const { esc, trocarHtml } = m_scripts_utilidades_html;
 const { vizinhosNaTabela } = m_scripts_dados_classificacao;
 
 // "1º" com o "o" pequeno, no alto e sublinhado, como se escreve à mão
@@ -730,14 +737,14 @@ function desenharClassificacao() {
 
   if (!lista.length) {
     alvo.classList.remove('classificacao-aberta');
-    alvo.innerHTML = estado.eventos.size ? '<div class="painel-vazio">classificação indisponível agora.</div>' : '';
+    trocarHtml(alvo, estado.eventos.size ? '<div class="painel-vazio">classificação indisponível agora.</div>' : '');
     return;
   }
 
   const aberta = estado.filtro !== 'todos';
   alvo.classList.toggle('classificacao-aberta', aberta);
-  alvo.innerHTML = lista.map(([t, pos], i) => cartao(t, pos, i)).join('')
-    + (aberta ? disputa(lista[0][0]) : '');
+  trocarHtml(alvo, lista.map(([t, pos], i) => cartao(t, pos, i)).join('')
+    + (aberta ? disputa(lista[0][0]) : ''));
 }
 
 return { desenharClassificacao };
@@ -746,7 +753,7 @@ return { desenharClassificacao };
 // ===== scripts/tela/proximos.js =====
 const m_scripts_tela_proximos = (() => {
 // tabela dos próximos jogos
-const { esc, escudo, nomeTodo, dataBloco } = m_scripts_utilidades_html;
+const { esc, escudo, nomeTodo, dataBloco, trocarHtml } = m_scripts_utilidades_html;
 const { hora, falta } = m_scripts_utilidades_datas;
 const { situacaoTexto, foraDoAr, corDe } = m_scripts_dados_jogos;
 const { meus } = m_times_index;
@@ -770,11 +777,11 @@ function linha(e, i) {
 
 function desenharProximos(lista, temDados) {
   const alvo = document.querySelector('#proximos');
-  if (!temDados) { alvo.innerHTML = ''; return; }
-  alvo.innerHTML = lista.length
+  if (!temDados) { trocarHtml(alvo, ''); return; }
+  trocarHtml(alvo, lista.length
     ? `<div class="painel-cabeca cabeca-agenda"><span>data</span><span>hora</span><span>jogo</span><span>campeonato</span></div>
        ${lista.map(linha).join('')}`
-    : '<div class="painel-vazio">nenhum jogo marcado por enquanto.</div>';
+    : '<div class="painel-vazio">nenhum jogo marcado por enquanto.</div>');
 }
 
 return { ladoDoJogo, desenharProximos };
@@ -784,7 +791,7 @@ return { ladoDoJogo, desenharProximos };
 const m_scripts_tela_resultados = (() => {
 // tabela dos últimos resultados
 const { estado } = m_scripts_estado;
-const { esc, dataBloco } = m_scripts_utilidades_html;
+const { esc, dataBloco, trocarHtml } = m_scripts_utilidades_html;
 const { resultadoPara, nomeResultado, corDe } = m_scripts_dados_jogos;
 const { ladoDoJogo } = m_scripts_tela_proximos;
 
@@ -802,11 +809,11 @@ function linha(e, i) {
 
 function desenharResultados(lista, temDados) {
   const alvo = document.querySelector('#resultados');
-  if (!temDados) { alvo.innerHTML = ''; return; }
-  alvo.innerHTML = lista.length
+  if (!temDados) { trocarHtml(alvo, ''); return; }
+  trocarHtml(alvo, lista.length
     ? `<div class="painel-cabeca cabeca-resultados"><span>data</span><span>jogo</span><span>campeonato</span><span></span></div>
        ${lista.map(linha).join('')}`
-    : '<div class="painel-vazio">sem resultados recentes.</div>';
+    : '<div class="painel-vazio">sem resultados recentes.</div>');
 }
 
 return { desenharResultados };
@@ -846,7 +853,9 @@ function desenhar() {
   if (estado.erro) at.innerHTML = `<span class="aviso">${esc(estado.erro)}${estado.ultimaAtualizacao ? ` · dados das ${esc(hora(estado.ultimaAtualizacao))}` : ''}</span>`;
   else if (estado.ultimaAtualizacao) at.textContent = `atualizado ${hora(estado.ultimaAtualizacao)}`;
 
-  if (estado.animarEntrada) {
+  // a entrada animada roda uma vez só, na primeira vez que tem jogo pra mostrar
+  // (antes rodava com os dados guardados e de novo quando chegavam os novos: piscava duas vezes)
+  if (estado.animarEntrada && temDados) {
     document.body.classList.add('entrando');
     clearTimeout(timerEntrada);
     timerEntrada = setTimeout(() => document.body.classList.remove('entrando'), 1400);
@@ -878,7 +887,6 @@ const { salvarPorTime } = m_scripts_dados_arquivo;
 const { desenhar } = m_scripts_tela_pagina;
 
 let timerBusca = null;
-let primeiraBusca = true;
 
 async function atualizar() {
   clearTimeout(timerBusca);
@@ -890,7 +898,6 @@ async function atualizar() {
     estado.erro = e.message || 'falha ao buscar os jogos';
   }
   document.body.classList.remove('buscando');
-  if (primeiraBusca) { estado.animarEntrada = true; primeiraBusca = false; } // entrada animada com os dados frescos
   desenhar();
   // com jogo rolando (ou pra começar) atualiza a cada 30s; senão, a cada 5 min
   timerBusca = setTimeout(atualizar, temJogoQuente() ? 30e3 : 5 * 6e4);

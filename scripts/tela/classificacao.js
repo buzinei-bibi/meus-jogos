@@ -2,7 +2,7 @@
 // com um time escolhido no filtro, abre também a disputa: quem está colado na tabela (pro líder, o 2º colocado)
 import { estado } from '../estado.js';
 import { times } from '../../times/index.js';
-import { esc } from '../utilidades/html.js';
+import { esc, trocarHtml } from '../utilidades/html.js';
 import { vizinhosNaTabela } from '../dados/classificacao.js';
 
 // "1º" com o "o" pequeno, no alto e sublinhado, como se escreve à mão
@@ -51,12 +51,12 @@ export function desenharClassificacao() {
 
   if (!lista.length) {
     alvo.classList.remove('classificacao-aberta');
-    alvo.innerHTML = estado.eventos.size ? '<div class="painel-vazio">classificação indisponível agora.</div>' : '';
+    trocarHtml(alvo, estado.eventos.size ? '<div class="painel-vazio">classificação indisponível agora.</div>' : '');
     return;
   }
 
   const aberta = estado.filtro !== 'todos';
   alvo.classList.toggle('classificacao-aberta', aberta);
-  alvo.innerHTML = lista.map(([t, pos], i) => cartao(t, pos, i)).join('')
-    + (aberta ? disputa(lista[0][0]) : '');
+  trocarHtml(alvo, lista.map(([t, pos], i) => cartao(t, pos, i)).join('')
+    + (aberta ? disputa(lista[0][0]) : ''));
 }

@@ -1,7 +1,7 @@
 // cards dos jogos de hoje (placar em formato de tv: um time por linha)
 import { estado } from '../estado.js';
 import { meus } from '../../times/index.js';
-import { esc, escudo, nomeTodo } from '../utilidades/html.js';
+import { esc, escudo, nomeTodo, trocarHtml } from '../utilidades/html.js';
 import { hora, falta, diaRelativo } from '../utilidades/datas.js';
 import { resultadoPara, situacaoTexto, foraDoAr, corDe, ligaTexto } from '../dados/jogos.js';
 
@@ -58,6 +58,6 @@ function semJogo(proximo) {
 
 export function desenharHoje(doDia, proximoJogo) {
   const alvo = document.querySelector('#hoje');
-  if (doDia.length) alvo.innerHTML = doDia.map(cartao).join('');
-  else alvo.innerHTML = estado.eventos.size ? semJogo(proximoJogo) : '<div class="vazio esqueleto"></div>';
+  if (doDia.length) trocarHtml(alvo, doDia.map(cartao).join(''));
+  else trocarHtml(alvo, estado.eventos.size ? semJogo(proximoJogo) : '<div class="vazio esqueleto"></div>');
 }

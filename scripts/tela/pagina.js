@@ -30,7 +30,9 @@ export function desenhar() {
   if (estado.erro) at.innerHTML = `<span class="aviso">${esc(estado.erro)}${estado.ultimaAtualizacao ? ` · dados das ${esc(hora(estado.ultimaAtualizacao))}` : ''}</span>`;
   else if (estado.ultimaAtualizacao) at.textContent = `atualizado ${hora(estado.ultimaAtualizacao)}`;
 
-  if (estado.animarEntrada) {
+  // a entrada animada roda uma vez só, na primeira vez que tem jogo pra mostrar
+  // (antes rodava com os dados guardados e de novo quando chegavam os novos: piscava duas vezes)
+  if (estado.animarEntrada && temDados) {
     document.body.classList.add('entrando');
     clearTimeout(timerEntrada);
     timerEntrada = setTimeout(() => document.body.classList.remove('entrando'), 1400);

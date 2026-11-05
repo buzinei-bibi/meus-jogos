@@ -1,6 +1,6 @@
 // tabela dos últimos resultados
 import { estado } from '../estado.js';
-import { esc, dataBloco } from '../utilidades/html.js';
+import { esc, dataBloco, trocarHtml } from '../utilidades/html.js';
 import { resultadoPara, nomeResultado, corDe } from '../dados/jogos.js';
 import { ladoDoJogo } from './proximos.js';
 
@@ -18,9 +18,9 @@ function linha(e, i) {
 
 export function desenharResultados(lista, temDados) {
   const alvo = document.querySelector('#resultados');
-  if (!temDados) { alvo.innerHTML = ''; return; }
-  alvo.innerHTML = lista.length
+  if (!temDados) { trocarHtml(alvo, ''); return; }
+  trocarHtml(alvo, lista.length
     ? `<div class="painel-cabeca cabeca-resultados"><span>data</span><span>jogo</span><span>campeonato</span><span></span></div>
        ${lista.map(linha).join('')}`
-    : '<div class="painel-vazio">sem resultados recentes.</div>';
+    : '<div class="painel-vazio">sem resultados recentes.</div>');
 }

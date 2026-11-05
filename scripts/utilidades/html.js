@@ -19,3 +19,10 @@ export function dataBloco(d) {
   const topo = rel === 'hoje' || rel === 'amanhã' ? rel : fmtSemanaCurta.format(d).replace('.', '');
   return `<span class="data-bloco"><small>${esc(topo)}</small><b>${esc(fmtDiaMes.format(d))}</b></span>`;
 }
+
+// troca o conteúdo só se mudou: redesenhar igual recriava os escudos e a tela piscava
+export function trocarHtml(alvo, html) {
+  if (!alvo || alvo._html === html) return;
+  alvo._html = html;
+  alvo.innerHTML = html;
+}

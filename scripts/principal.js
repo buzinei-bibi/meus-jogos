@@ -6,7 +6,6 @@ import { salvarPorTime } from './dados/arquivo.js';
 import { desenhar } from './tela/pagina.js';
 
 let timerBusca = null;
-let primeiraBusca = true;
 
 async function atualizar() {
   clearTimeout(timerBusca);
@@ -18,7 +17,6 @@ async function atualizar() {
     estado.erro = e.message || 'falha ao buscar os jogos';
   }
   document.body.classList.remove('buscando');
-  if (primeiraBusca) { estado.animarEntrada = true; primeiraBusca = false; } // entrada animada com os dados frescos
   desenhar();
   // com jogo rolando (ou pra começar) atualiza a cada 30s; senão, a cada 5 min
   timerBusca = setTimeout(atualizar, temJogoQuente() ? 30e3 : 5 * 6e4);
