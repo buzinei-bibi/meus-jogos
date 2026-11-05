@@ -82,7 +82,7 @@ button { font: inherit; color: inherit; text-transform: inherit; letter-spacing:
 
 .topo-acoes { display: flex; gap: 8px; }
 /* botões redondos só com ícone */
-.botao-atualizar {
+.botao-atualizar, .botao-calendario {
   display: inline-flex; align-items: center; justify-content: center;
   width: 42px; height: 42px; padding: 0; border-radius: 999px;
   border: 1px solid var(--borda); background: var(--cartao);
@@ -90,8 +90,8 @@ button { font: inherit; color: inherit; text-transform: inherit; letter-spacing:
   backdrop-filter: blur(18px);
   transition: background .2s, border-color .2s, transform .15s var(--mola);
 }
-.botao-atualizar:hover { background: var(--cartao-2); border-color: var(--borda-forte); transform: translateY(-1px); }
-.botao-atualizar:active { transform: scale(.94); }
+.botao-atualizar:hover, .botao-calendario:hover { background: var(--cartao-2); border-color: var(--borda-forte); transform: translateY(-1px); }
+.botao-atualizar:active, .botao-calendario:active { transform: scale(.94); }
 .buscando .botao-atualizar svg { animation: girar 0.9s linear infinite; }
 @keyframes girar { to { transform: rotate(360deg); } }
 

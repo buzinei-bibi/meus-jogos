@@ -919,6 +919,18 @@ document.querySelector('#ir-home')?.addEventListener('click', (ev) => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 document.querySelector('#atualizar')?.addEventListener('click', atualizar);
+
+// botão do calendário: no iphone abre a assinatura direto no app calendário;
+// no android e no computador abre o google agenda já com o calendário pra adicionar
+const calendarioPublico = 'buzinei-bibi.github.io/meus-jogos/calendario.ics';
+const botaoCalendario = document.querySelector('#calendario');
+if (botaoCalendario) {
+  const iphone = /iPhone|iPad|iPod|Macintosh/.test(navigator.userAgent) && /Safari/.test(navigator.userAgent) && !/Chrome|CriOS|Android/.test(navigator.userAgent);
+  botaoCalendario.href = iphone
+    ? `webcal://${calendarioPublico}`
+    : `https://calendar.google.com/calendar/render?cid=${encodeURIComponent(`webcal://${calendarioPublico}`)}`;
+  if (!iphone) botaoCalendario.target = '_blank';
+}
 document.addEventListener('visibilitychange', () => { if (!document.hidden) atualizar(); });
 setInterval(desenhar, 30e3); // contagens regressivas andam mesmo sem buscar
 

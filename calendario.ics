@@ -1,0 +1,1851 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//meus jogos//calendario//PT-BR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Meus jogos
+X-WR-TIMEZONE:America/Sao_Paulo
+X-WR-CALDESC:Jogos do Flamengo, Manchester City, Real Madrid e Borussia Dor
+ tmund
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+BEGIN:VEVENT
+UID:401912523@meus-jogos
+DTSTAMP:20261016T003000Z
+DTSTART:20261016T003000Z
+DTEND:20261016T023000Z
+SUMMARY:Estudiantes de La Plata 0 x 0 Flamengo
+DESCRIPTION:Libertadores\nhttps://www.espn.com/soccer/match/_/gameId/401912
+ 523
+LOCATION:Estadio Jorge Luis Hirschi\, La Plata
+URL:https://www.espn.com/soccer/match/_/gameId/401912523
+END:VEVENT
+BEGIN:VEVENT
+UID:401884769@meus-jogos
+DTSTAMP:20261017T133000Z
+DTSTART:20261017T133000Z
+DTEND:20261017T153000Z
+SUMMARY:1. FC Union Berlin 0 x 0 Borussia Dortmund
+DESCRIPTION:Bundesliga\nhttps://www.espn.com/soccer/match/_/gameId/40188476
+ 9
+LOCATION:Stadion An der Alten Försterei\, Berlin
+URL:https://www.espn.com/soccer/match/_/gameId/401884769
+END:VEVENT
+BEGIN:VEVENT
+UID:401879259@meus-jogos
+DTSTAMP:20261017T140000Z
+DTSTART:20261017T140000Z
+DTEND:20261017T160000Z
+SUMMARY:Manchester City 3 x 2 Ipswich Town
+DESCRIPTION:Premier League\nhttps://www.espn.com/soccer/match/_/gameId/4018
+ 79259
+LOCATION:Etihad Stadium\, Manchester
+URL:https://www.espn.com/soccer/match/_/gameId/401879259
+END:VEVENT
+BEGIN:VEVENT
+UID:401882839@meus-jogos
+DTSTAMP:20261018T190000Z
+DTSTART:20261018T190000Z
+DTEND:20261018T210000Z
+SUMMARY:Real Madrid 4 x 1 Sevilla
+DESCRIPTION:La Liga\nhttps://www.espn.com/soccer/match/_/gameId/401882839
+LOCATION:Santiago Bernabéu\, Madrid
+URL:https://www.espn.com/soccer/match/_/gameId/401882839
+END:VEVENT
+BEGIN:VEVENT
+UID:401841269@meus-jogos
+DTSTAMP:20261018T213000Z
+DTSTART:20261018T213000Z
+DTEND:20261018T233000Z
+SUMMARY:Bahia 0 x 3 Flamengo
+DESCRIPTION:Brasileirão\nhttps://www.espn.com/soccer/match/_/gameId/401841
+ 269
+LOCATION:Arena Fonte Nova\, Salvador
+URL:https://www.espn.com/soccer/match/_/gameId/401841269
+END:VEVENT
+BEGIN:VEVENT
+UID:401915404@meus-jogos
+DTSTAMP:20261020T164500Z
+DTSTART:20261020T164500Z
+DTEND:20261020T184500Z
+SUMMARY:Sabah FK 1 x 2 Borussia Dortmund
+DESCRIPTION:Champions League\nhttps://www.espn.com/soccer/match/_/gameId/40
+ 1915404
+LOCATION:Baku Olympic Stadium\, Baku
+URL:https://www.espn.com/soccer/match/_/gameId/401915404
+END:VEVENT
+BEGIN:VEVENT
+UID:401915401@meus-jogos
+DTSTAMP:20261020T190000Z
+DTSTART:20261020T190000Z
+DTEND:20261020T210000Z
+SUMMARY:Manchester City 5 x 1 AEK Athens
+DESCRIPTION:Champions League\nhttps://www.espn.com/soccer/match/_/gameId/40
+ 1915401
+LOCATION:Etihad Stadium\, Manchester
+URL:https://www.espn.com/soccer/match/_/gameId/401915401
+END:VEVENT
+BEGIN:VEVENT
+UID:401915313@meus-jogos
+DTSTAMP:20261021T190000Z
+DTSTART:20261021T190000Z
+DTEND:20261021T210000Z
+SUMMARY:Real Madrid 4 x 1 RB Leipzig
+DESCRIPTION:Champions League\nhttps://www.espn.com/soccer/match/_/gameId/40
+ 1915313
+LOCATION:Santiago Bernabéu\, Madrid
+URL:https://www.espn.com/soccer/match/_/gameId/401915313
+END:VEVENT
+BEGIN:VEVENT
+UID:401912521@meus-jogos
+DTSTAMP:20261023T003000Z
+DTSTART:20261023T003000Z
+DTEND:20261023T023000Z
+SUMMARY:Flamengo 0 x 0 Estudiantes de La Plata
+DESCRIPTION:Libertadores\nhttps://www.espn.com/soccer/match/_/gameId/401912
+ 521
+LOCATION:Estadio do Maracana\, Rio de Janeiro
+URL:https://www.espn.com/soccer/match/_/gameId/401912521
+END:VEVENT
+BEGIN:VEVENT
+UID:401879256@meus-jogos
+DTSTAMP:20261024T113000Z
+DTSTART:20261024T113000Z
+DTEND:20261024T133000Z
+SUMMARY:Aston Villa 2 x 1 Manchester City
+DESCRIPTION:Premier League\nhttps://www.espn.com/soccer/match/_/gameId/4018
+ 79256
+LOCATION:Villa Park\, Birmingham
+URL:https://www.espn.com/soccer/match/_/gameId/401879256
+END:VEVENT
+BEGIN:VEVENT
+UID:401884763@meus-jogos
+DTSTAMP:20261024T163000Z
+DTSTART:20261024T163000Z
+DTEND:20261024T183000Z
+SUMMARY:Borussia Dortmund 1 x 0 Eintracht Frankfurt
+DESCRIPTION:Bundesliga\nhttps://www.espn.com/soccer/match/_/gameId/40188476
+ 3
+LOCATION:Signal Iduna Park\, Aue
+URL:https://www.espn.com/soccer/match/_/gameId/401884763
+END:VEVENT
+BEGIN:VEVENT
+UID:401882832@meus-jogos
+DTSTAMP:20261025T200000Z
+DTSTART:20261025T200000Z
+DTEND:20261025T220000Z
+SUMMARY:Barcelona 1 x 2 Real Madrid
+DESCRIPTION:La Liga\nhttps://www.espn.com/soccer/match/_/gameId/401882832
+LOCATION:Spotify Camp Nou\, Barcelona
+URL:https://www.espn.com/soccer/match/_/gameId/401882832
+END:VEVENT
+BEGIN:VEVENT
+UID:401841286@meus-jogos
+DTSTAMP:20261026T230000Z
+DTSTART:20261026T230000Z
+DTEND:20261027T010000Z
+SUMMARY:Flamengo 3 x 2 Atlético-MG
+DESCRIPTION:Brasileirão\nhttps://www.espn.com/soccer/match/_/gameId/401841
+ 286
+LOCATION:Estadio do Maracana\, Rio de Janeiro
+URL:https://www.espn.com/soccer/match/_/gameId/401841286
+END:VEVENT
+BEGIN:VEVENT
+UID:401917030@meus-jogos
+DTSTAMP:20261027T194500Z
+DTSTART:20261027T194500Z
+DTEND:20261027T214500Z
+SUMMARY:Borussia Dortmund 3 x 2 Werder Bremen
+DESCRIPTION:Copa da Alemanha\nhttps://www.espn.com/soccer/match/_/gameId/40
+ 1917030
+LOCATION:Signal Iduna Park\, Aue
+URL:https://www.espn.com/soccer/match/_/gameId/401917030
+END:VEVENT
+BEGIN:VEVENT
+UID:401921834@meus-jogos
+DTSTAMP:20261028T193000Z
+DTSTART:20261028T193000Z
+DTEND:20261028T213000Z
+SUMMARY:Manchester City 2 x 2 Brighton & Hove Albion
+DESCRIPTION:Copa da Liga Inglesa\nhttps://www.espn.com/soccer/match/_/gameI
+ d/401921834
+LOCATION:Etihad Stadium\, Manchester
+URL:https://www.espn.com/soccer/match/_/gameId/401921834
+END:VEVENT
+BEGIN:VEVENT
+UID:401841292@meus-jogos
+DTSTAMP:20261029T230000Z
+DTSTART:20261029T230000Z
+DTEND:20261030T010000Z
+SUMMARY:Vasco da Gama 1 x 4 Flamengo
+DESCRIPTION:Brasileirão\nhttps://www.espn.com/soccer/match/_/gameId/401841
+ 292
+LOCATION:Joao Havelange Stadium\, Rio de Janeiro
+URL:https://www.espn.com/soccer/match/_/gameId/401841292
+END:VEVENT
+BEGIN:VEVENT
+UID:401879245@meus-jogos
+DTSTAMP:20261031T150000Z
+DTSTART:20261031T150000Z
+DTEND:20261031T170000Z
+SUMMARY:Manchester City 0 x 1 Brighton & Hove Albion
+DESCRIPTION:Premier League\nhttps://www.espn.com/soccer/match/_/gameId/4018
+ 79245
+LOCATION:Etihad Stadium\, Manchester
+URL:https://www.espn.com/soccer/match/_/gameId/401879245
+END:VEVENT
+BEGIN:VEVENT
+UID:401884754@meus-jogos
+DTSTAMP:20261031T173000Z
+DTSTART:20261031T173000Z
+DTEND:20261031T193000Z
+SUMMARY:Bayern Munich 2 x 2 Borussia Dortmund
+DESCRIPTION:Bundesliga\nhttps://www.espn.com/soccer/match/_/gameId/40188475
+ 4
+LOCATION:Allianz Arena\, München
+URL:https://www.espn.com/soccer/match/_/gameId/401884754
+END:VEVENT
+BEGIN:VEVENT
+UID:401882819@meus-jogos
+DTSTAMP:20261101T151500Z
+DTSTART:20261101T151500Z
+DTEND:20261101T171500Z
+SUMMARY:Racing Santander 0 x 3 Real Madrid
+DESCRIPTION:La Liga\nhttps://www.espn.com/soccer/match/_/gameId/401882819
+LOCATION:El Sardineros\, Santander
+URL:https://www.espn.com/soccer/match/_/gameId/401882819
+END:VEVENT
+BEGIN:VEVENT
+UID:401915383@meus-jogos
+DTSTAMP:20261104T174500Z
+DTSTART:20261104T174500Z
+DTEND:20261104T194500Z
+SUMMARY:AEK Athens 2 x 3 Real Madrid
+DESCRIPTION:Champions League\nhttps://www.espn.com/soccer/match/_/gameId/40
+ 1915383
+LOCATION:OPAP Arena\, Athens
+URL:https://www.espn.com/soccer/match/_/gameId/401915383
+END:VEVENT
+BEGIN:VEVENT
+UID:401915306@meus-jogos
+DTSTAMP:20261104T200000Z
+DTSTART:20261104T200000Z
+DTEND:20261104T220000Z
+SUMMARY:RB Leipzig 2 x 3 Manchester City
+DESCRIPTION:Champions League\nhttps://www.espn.com/soccer/match/_/gameId/40
+ 1915306
+LOCATION:Red Bull Arena\, Leipzig
+URL:https://www.espn.com/soccer/match/_/gameId/401915306
+END:VEVENT
+BEGIN:VEVENT
+UID:401915304@meus-jogos
+DTSTAMP:20261104T200000Z
+DTSTART:20261104T200000Z
+DTEND:20261104T220000Z
+SUMMARY:Borussia Dortmund 2 x 1 Real Betis
+DESCRIPTION:Champions League\nhttps://www.espn.com/soccer/match/_/gameId/40
+ 1915304
+LOCATION:Signal Iduna Park\, Aue
+URL:https://www.espn.com/soccer/match/_/gameId/401915304
+END:VEVENT
+BEGIN:VEVENT
+UID:401841307@meus-jogos
+DTSTAMP:20261104T223000Z
+DTSTART:20261104T223000Z
+DTEND:20261105T003000Z
+SUMMARY:Flamengo 3 x 1 Grêmio
+DESCRIPTION:Brasileirão\nhttps://www.espn.com/soccer/match/_/gameId/401841
+ 307
+LOCATION:Estadio do Maracana\, Rio de Janeiro
+URL:https://www.espn.com/soccer/match/_/gameId/401841307
+END:VEVENT
+BEGIN:VEVENT
+UID:401884745@meus-jogos
+DTSTAMP:20261107T143000Z
+DTSTART:20261107T143000Z
+DTEND:20261107T163000Z
+SUMMARY:⚽ Borussia Dortmund x SV Elversberg
+DESCRIPTION:Bundesliga\nhttps://www.espn.com/soccer/match/_/gameId/40188474
+ 5
+LOCATION:Signal Iduna Park\, Aue
+URL:https://www.espn.com/soccer/match/_/gameId/401884745
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Borussia Dortmund x SV Elversberg
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401878757@meus-jogos
+DTSTAMP:20261107T173000Z
+DTSTART:20261107T173000Z
+DTEND:20261107T193000Z
+SUMMARY:⚽ Nottingham Forest x Manchester City
+DESCRIPTION:Premier League\nhttps://www.espn.com/soccer/match/_/gameId/4018
+ 78757
+LOCATION:The City Ground\, Nottingham
+URL:https://www.espn.com/soccer/match/_/gameId/401878757
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Nottingham Forest x Manchester City
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401882808@meus-jogos
+DTSTAMP:20261107T200000Z
+DTSTART:20261107T200000Z
+DTEND:20261107T220000Z
+SUMMARY:⚽ Valencia x Real Madrid
+DESCRIPTION:La Liga\nhttps://www.espn.com/soccer/match/_/gameId/401882808
+LOCATION:Mestalla Stadium\, Manises
+URL:https://www.espn.com/soccer/match/_/gameId/401882808
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Valencia x Real Madrid
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401841313@meus-jogos
+DTSTAMP:20261118T233000Z
+DTSTART:20261118T233000Z
+DTEND:20261119T013000Z
+SUMMARY:⚽ Flamengo x Athletico Paranaense
+DESCRIPTION:Brasileirão\nhttps://www.espn.com/soccer/match/_/gameId/401841
+ 313
+LOCATION:Estadio do Maracana\, Rio de Janeiro
+URL:https://www.espn.com/soccer/match/_/gameId/401841313
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Flamengo x Athletico Paranaense
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401879233@meus-jogos
+DTSTAMP:20261121T123000Z
+DTSTART:20261121T123000Z
+DTEND:20261121T143000Z
+SUMMARY:⚽ Manchester City x Fulham
+DESCRIPTION:Premier League\nhttps://www.espn.com/soccer/match/_/gameId/4018
+ 79233
+LOCATION:Etihad Stadium\, Manchester
+URL:https://www.espn.com/soccer/match/_/gameId/401879233
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Manchester City x Fulham
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401884731@meus-jogos
+DTSTAMP:20261121T143000Z
+DTSTART:20261121T143000Z
+DTEND:20261121T163000Z
+SUMMARY:⚽ Borussia Mönchengladbach x Borussia Dortmund
+DESCRIPTION:Bundesliga\nhttps://www.espn.com/soccer/match/_/gameId/40188473
+ 1
+LOCATION:BORUSSIA-PARK\, Mönchengladbach
+URL:https://www.espn.com/soccer/match/_/gameId/401884731
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Borussia Mönchengladbach x Borussia Dortmund
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401841322@meus-jogos
+DTSTAMP:20261121T193000Z
+DTSTART:20261121T193000Z
+DTEND:20261121T213000Z
+SUMMARY:⚽ Palmeiras x Flamengo
+DESCRIPTION:Brasileirão\nhttps://www.espn.com/soccer/match/_/gameId/401841
+ 322
+LOCATION:Allianz Parque\, Sao Paulo
+URL:https://www.espn.com/soccer/match/_/gameId/401841322
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Palmeiras x Flamengo
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401882798@meus-jogos
+DTSTAMP:20261121T200000Z
+DTSTART:20261121T200000Z
+DTEND:20261121T220000Z
+SUMMARY:⚽ Real Madrid x Celta Vigo
+DESCRIPTION:La Liga\nhttps://www.espn.com/soccer/match/_/gameId/401882798
+LOCATION:Santiago Bernabéu\, Madrid
+URL:https://www.espn.com/soccer/match/_/gameId/401882798
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Real Madrid x Celta Vigo
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401915379@meus-jogos
+DTSTAMP:20261124T200000Z
+DTSTART:20261124T200000Z
+DTEND:20261124T220000Z
+SUMMARY:⚽ Manchester City x Napoli
+DESCRIPTION:Champions League\nhttps://www.espn.com/soccer/match/_/gameId/40
+ 1915379
+LOCATION:Etihad Stadium\, Manchester
+URL:https://www.espn.com/soccer/match/_/gameId/401915379
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Manchester City x Napoli
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401915298@meus-jogos
+DTSTAMP:20261124T200000Z
+DTSTART:20261124T200000Z
+DTEND:20261124T220000Z
+SUMMARY:⚽ Real Madrid x PSV Eindhoven
+DESCRIPTION:Champions League\nhttps://www.espn.com/soccer/match/_/gameId/40
+ 1915298
+LOCATION:Santiago Bernabéu\, Madrid
+URL:https://www.espn.com/soccer/match/_/gameId/401915298
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Real Madrid x PSV Eindhoven
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401915295@meus-jogos
+DTSTAMP:20261124T200000Z
+DTSTART:20261124T200000Z
+DTEND:20261124T220000Z
+SUMMARY:⚽ Arsenal x Borussia Dortmund
+DESCRIPTION:Champions League\nhttps://www.espn.com/soccer/match/_/gameId/40
+ 1915295
+LOCATION:Emirates Stadium\, London
+URL:https://www.espn.com/soccer/match/_/gameId/401915295
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Arsenal x Borussia Dortmund
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401841333@meus-jogos
+DTSTAMP:20261128T200000Z
+DTSTART:20261128T200000Z
+DTEND:20261128T220000Z
+SUMMARY:⚽ Coritiba x Flamengo
+DESCRIPTION:Brasileirão\nhttps://www.espn.com/soccer/match/_/gameId/401841
+ 333
+LOCATION:Couto Pereira\, Curitiba
+URL:https://www.espn.com/soccer/match/_/gameId/401841333
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Coritiba x Flamengo
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401878753@meus-jogos
+DTSTAMP:20261129T163000Z
+DTSTART:20261129T163000Z
+DTEND:20261129T183000Z
+SUMMARY:⚽ Arsenal x Manchester City
+DESCRIPTION:Premier League\nhttps://www.espn.com/soccer/match/_/gameId/4018
+ 78753
+LOCATION:Emirates Stadium\, London
+URL:https://www.espn.com/soccer/match/_/gameId/401878753
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Arsenal x Manchester City
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401884727@meus-jogos
+DTSTAMP:20261129T183000Z
+DTSTART:20261129T183000Z
+DTEND:20261129T203000Z
+SUMMARY:⚽ Borussia Dortmund x Bayer Leverkusen
+DESCRIPTION:Bundesliga\nhttps://www.espn.com/soccer/match/_/gameId/40188472
+ 7
+LOCATION:Signal Iduna Park\, Aue
+URL:https://www.espn.com/soccer/match/_/gameId/401884727
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Borussia Dortmund x Bayer Leverkusen
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401882789@meus-jogos
+DTSTAMP:20261129T200000Z
+DTSTART:20261129T200000Z
+DTEND:20261129T220000Z
+SUMMARY:⚽ Real Madrid x Alavés
+DESCRIPTION:La Liga\nhttps://www.espn.com/soccer/match/_/gameId/401882789
+LOCATION:Santiago Bernabéu\, Madrid
+URL:https://www.espn.com/soccer/match/_/gameId/401882789
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Real Madrid x Alavés
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401879218@meus-jogos
+DTSTAMP:20261202T193000Z
+DTSTART:20261202T193000Z
+DTEND:20261202T213000Z
+SUMMARY:⚽ Manchester City x Leeds United
+DESCRIPTION:Premier League\nhttps://www.espn.com/soccer/match/_/gameId/4018
+ 79218
+LOCATION:Etihad Stadium\, Manchester
+URL:https://www.espn.com/soccer/match/_/gameId/401879218
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Manchester City x Leeds United
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401932916@meus-jogos
+DTSTAMP:20261202T194500Z
+DTSTART:20261202T194500Z
+DTEND:20261202T214500Z
+SUMMARY:⚽ Eintracht Frankfurt x Borussia Dortmund
+DESCRIPTION:Copa da Alemanha\nhttps://www.espn.com/soccer/match/_/gameId/40
+ 1932916
+LOCATION:Deutsche Bank Park\, Frankfurt
+URL:https://www.espn.com/soccer/match/_/gameId/401932916
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Eintracht Frankfurt x Borussia Dortmund
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401841341@meus-jogos
+DTSTAMP:20261202T200000Z
+DTSTART:20261202T200000Z
+DTEND:20261202T220000Z
+SUMMARY:⚽ Flamengo x Chapecoense
+DESCRIPTION:Brasileirão\nhttps://www.espn.com/soccer/match/_/gameId/401841
+ 341
+LOCATION:Estadio do Maracana\, Rio de Janeiro
+URL:https://www.espn.com/soccer/match/_/gameId/401841341
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Flamengo x Chapecoense
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401879214@meus-jogos
+DTSTAMP:20261205T200000Z
+DTSTART:20261205T200000Z
+DTEND:20261205T220000Z
+SUMMARY:⚽ Brentford x Manchester City
+DESCRIPTION:Premier League\nhttps://www.espn.com/soccer/match/_/gameId/4018
+ 79214
+LOCATION:Gtech Community Stadium\, Brentford
+URL:https://www.espn.com/soccer/match/_/gameId/401879214
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Brentford x Manchester City
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401884711@meus-jogos
+DTSTAMP:20261205T200000Z
+DTSTART:20261205T200000Z
+DTEND:20261205T220000Z
+SUMMARY:⚽ Schalke 04 x Borussia Dortmund
+DESCRIPTION:Bundesliga\nhttps://www.espn.com/soccer/match/_/gameId/40188471
+ 1
+LOCATION:Veltins Arena\, Gelsenkirchen
+URL:https://www.espn.com/soccer/match/_/gameId/401884711
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Schalke 04 x Borussia Dortmund
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401882785@meus-jogos
+DTSTAMP:20261206T200000Z
+DTSTART:20261206T200000Z
+DTEND:20261206T220000Z
+SUMMARY:⚽ Athletic Club x Real Madrid
+DESCRIPTION:La Liga\nhttps://www.espn.com/soccer/match/_/gameId/401882785
+LOCATION:San Mamés\, Bilbao
+URL:https://www.espn.com/soccer/match/_/gameId/401882785
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Athletic Club x Real Madrid
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401915285@meus-jogos
+DTSTAMP:20261208T200000Z
+DTSTART:20261208T200000Z
+DTEND:20261208T220000Z
+SUMMARY:⚽ Barcelona x Manchester City
+DESCRIPTION:Champions League\nhttps://www.espn.com/soccer/match/_/gameId/40
+ 1915285
+LOCATION:Spotify Camp Nou\, Barcelona
+URL:https://www.espn.com/soccer/match/_/gameId/401915285
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Barcelona x Manchester City
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401915367@meus-jogos
+DTSTAMP:20261209T200000Z
+DTSTART:20261209T200000Z
+DTEND:20261209T220000Z
+SUMMARY:⚽ Arsenal x Real Madrid
+DESCRIPTION:Champions League\nhttps://www.espn.com/soccer/match/_/gameId/40
+ 1915367
+LOCATION:Emirates Stadium\, London
+URL:https://www.espn.com/soccer/match/_/gameId/401915367
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Arsenal x Real Madrid
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401915368@meus-jogos
+DTSTAMP:20261209T200000Z
+DTSTART:20261209T200000Z
+DTEND:20261209T220000Z
+SUMMARY:⚽ Borussia Dortmund x Internazionale
+DESCRIPTION:Champions League\nhttps://www.espn.com/soccer/match/_/gameId/40
+ 1915368
+LOCATION:Signal Iduna Park\, Aue
+URL:https://www.espn.com/soccer/match/_/gameId/401915368
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Borussia Dortmund x Internazionale
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401878742@meus-jogos
+DTSTAMP:20261212T173000Z
+DTSTART:20261212T173000Z
+DTEND:20261212T193000Z
+SUMMARY:⚽ Manchester City x Chelsea
+DESCRIPTION:Premier League\nhttps://www.espn.com/soccer/match/_/gameId/4018
+ 78742
+LOCATION:Etihad Stadium\, Manchester
+URL:https://www.espn.com/soccer/match/_/gameId/401878742
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Manchester City x Chelsea
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401884709@meus-jogos
+DTSTAMP:20261212T200000Z
+DTSTART:20261212T200000Z
+DTEND:20261212T220000Z
+SUMMARY:⚽ Borussia Dortmund x FC Augsburg
+DESCRIPTION:Bundesliga\nhttps://www.espn.com/soccer/match/_/gameId/40188470
+ 9
+LOCATION:Signal Iduna Park\, Aue
+URL:https://www.espn.com/soccer/match/_/gameId/401884709
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Borussia Dortmund x FC Augsburg
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401882769@meus-jogos
+DTSTAMP:20261213T200000Z
+DTSTART:20261213T200000Z
+DTEND:20261213T220000Z
+SUMMARY:⚽ Real Madrid x Osasuna
+DESCRIPTION:La Liga\nhttps://www.espn.com/soccer/match/_/gameId/401882769
+LOCATION:Santiago Bernabéu\, Madrid
+URL:https://www.espn.com/soccer/match/_/gameId/401882769
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Real Madrid x Osasuna
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401932185@meus-jogos
+DTSTAMP:20261215T200000Z
+DTSTART:20261215T200000Z
+DTEND:20261215T220000Z
+SUMMARY:⚽ Manchester City x Bradford City
+DESCRIPTION:Copa da Liga Inglesa\nhttps://www.espn.com/soccer/match/_/gameI
+ d/401932185
+LOCATION:Etihad Stadium\, Manchester
+URL:https://www.espn.com/soccer/match/_/gameId/401932185
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Manchester City x Bradford City
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401879199@meus-jogos
+DTSTAMP:20261219T150000Z
+DTSTART:20261219T150000Z
+DTEND:20261219T170000Z
+SUMMARY:⚽ Manchester City x Hull City
+DESCRIPTION:Premier League\nhttps://www.espn.com/soccer/match/_/gameId/4018
+ 79199
+LOCATION:Etihad Stadium\, Manchester
+URL:https://www.espn.com/soccer/match/_/gameId/401879199
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Manchester City x Hull City
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401884699@meus-jogos
+DTSTAMP:20261219T200000Z
+DTSTART:20261219T200000Z
+DTEND:20261219T220000Z
+SUMMARY:⚽ RB Leipzig x Borussia Dortmund
+DESCRIPTION:Bundesliga\nhttps://www.espn.com/soccer/match/_/gameId/40188469
+ 9
+LOCATION:Red Bull Arena\, Leipzig
+URL:https://www.espn.com/soccer/match/_/gameId/401884699
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ RB Leipzig x Borussia Dortmund
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401882763@meus-jogos
+DTSTAMP:20261220T200000Z
+DTSTART:20261220T200000Z
+DTEND:20261220T220000Z
+SUMMARY:⚽ Deportivo x Real Madrid
+DESCRIPTION:La Liga\nhttps://www.espn.com/soccer/match/_/gameId/401882763
+LOCATION:Riazor\, La Coruña
+URL:https://www.espn.com/soccer/match/_/gameId/401882763
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Deportivo x Real Madrid
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401878732@meus-jogos
+DTSTAMP:20261226T200000Z
+DTSTART:20261226T200000Z
+DTEND:20261226T220000Z
+SUMMARY:⚽ Newcastle United x Manchester City
+DESCRIPTION:Premier League\nhttps://www.espn.com/soccer/match/_/gameId/4018
+ 78732
+LOCATION:St. James' Park\, Newcastle-upon-Tyne
+URL:https://www.espn.com/soccer/match/_/gameId/401878732
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Newcastle United x Manchester City
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401879192@meus-jogos
+DTSTAMP:20261229T201500Z
+DTSTART:20261229T201500Z
+DTEND:20261229T221500Z
+SUMMARY:⚽ Everton x Manchester City
+DESCRIPTION:Premier League\nhttps://www.espn.com/soccer/match/_/gameId/4018
+ 79192
+LOCATION:Hill Dickinson Stadium\, Liverpool
+URL:https://www.espn.com/soccer/match/_/gameId/401879192
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Everton x Manchester City
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401879180@meus-jogos
+DTSTAMP:20270103T163000Z
+DTSTART:20270103T163000Z
+DTEND:20270103T183000Z
+SUMMARY:⚽ Manchester City x Tottenham Hotspur
+DESCRIPTION:Premier League\nhttps://www.espn.com/soccer/match/_/gameId/4018
+ 79180
+LOCATION:Etihad Stadium\, Manchester
+URL:https://www.espn.com/soccer/match/_/gameId/401879180
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Manchester City x Tottenham Hotspur
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401882749@meus-jogos
+DTSTAMP:20270103T200000Z
+DTSTART:20270103T200000Z
+DTEND:20270103T220000Z
+SUMMARY:⚽ Real Madrid x Getafe
+DESCRIPTION:La Liga\nhttps://www.espn.com/soccer/match/_/gameId/401882749
+LOCATION:Santiago Bernabéu\, Madrid
+URL:https://www.espn.com/soccer/match/_/gameId/401882749
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Real Madrid x Getafe
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401879171@meus-jogos
+DTSTAMP:20270106T201500Z
+DTSTART:20270106T201500Z
+DTEND:20270106T221500Z
+SUMMARY:⚽ Leeds United x Manchester City
+DESCRIPTION:Premier League\nhttps://www.espn.com/soccer/match/_/gameId/4018
+ 79171
+LOCATION:Elland Road\, Leeds
+URL:https://www.espn.com/soccer/match/_/gameId/401879171
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Leeds United x Manchester City
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401884691@meus-jogos
+DTSTAMP:20270109T200000Z
+DTSTART:20270109T200000Z
+DTEND:20270109T220000Z
+SUMMARY:⚽ Borussia Dortmund x Mainz
+DESCRIPTION:Bundesliga\nhttps://www.espn.com/soccer/match/_/gameId/40188469
+ 1
+LOCATION:Signal Iduna Park\, Aue
+URL:https://www.espn.com/soccer/match/_/gameId/401884691
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Borussia Dortmund x Mainz
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401882739@meus-jogos
+DTSTAMP:20270110T200000Z
+DTSTART:20270110T200000Z
+DTEND:20270110T220000Z
+SUMMARY:⚽ Real Madrid x Levante
+DESCRIPTION:La Liga\nhttps://www.espn.com/soccer/match/_/gameId/401882739
+LOCATION:Santiago Bernabéu\, Madrid
+URL:https://www.espn.com/soccer/match/_/gameId/401882739
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Real Madrid x Levante
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401884676@meus-jogos
+DTSTAMP:20270113T200000Z
+DTSTART:20270113T200000Z
+DTEND:20270113T220000Z
+SUMMARY:⚽ FC Cologne x Borussia Dortmund
+DESCRIPTION:Bundesliga\nhttps://www.espn.com/soccer/match/_/gameId/40188467
+ 6
+LOCATION:RheinEnergieStadion\, Cologne
+URL:https://www.espn.com/soccer/match/_/gameId/401884676
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ FC Cologne x Borussia Dortmund
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401878722@meus-jogos
+DTSTAMP:20270116T150000Z
+DTSTART:20270116T150000Z
+DTEND:20270116T170000Z
+SUMMARY:⚽ Manchester City x Nottingham Forest
+DESCRIPTION:Premier League\nhttps://www.espn.com/soccer/match/_/gameId/4018
+ 78722
+LOCATION:Etihad Stadium\, Manchester
+URL:https://www.espn.com/soccer/match/_/gameId/401878722
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Manchester City x Nottingham Forest
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401884673@meus-jogos
+DTSTAMP:20270116T200000Z
+DTSTART:20270116T200000Z
+DTEND:20270116T220000Z
+SUMMARY:⚽ Borussia Dortmund x SC Freiburg
+DESCRIPTION:Bundesliga\nhttps://www.espn.com/soccer/match/_/gameId/40188467
+ 3
+LOCATION:Signal Iduna Park\, Aue
+URL:https://www.espn.com/soccer/match/_/gameId/401884673
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Borussia Dortmund x SC Freiburg
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401882730@meus-jogos
+DTSTAMP:20270117T200000Z
+DTSTART:20270117T200000Z
+DTEND:20270117T220000Z
+SUMMARY:⚽ Málaga x Real Madrid
+DESCRIPTION:La Liga\nhttps://www.espn.com/soccer/match/_/gameId/401882730
+LOCATION:La Rosaleda\, Malaga
+URL:https://www.espn.com/soccer/match/_/gameId/401882730
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Málaga x Real Madrid
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401915280@meus-jogos
+DTSTAMP:20270119T200000Z
+DTSTART:20270119T200000Z
+DTEND:20270119T220000Z
+SUMMARY:⚽ Real Madrid x LASK Linz
+DESCRIPTION:Champions League\nhttps://www.espn.com/soccer/match/_/gameId/40
+ 1915280
+LOCATION:Santiago Bernabéu\, Madrid
+URL:https://www.espn.com/soccer/match/_/gameId/401915280
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Real Madrid x LASK Linz
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401915279@meus-jogos
+DTSTAMP:20270119T200000Z
+DTSTART:20270119T200000Z
+DTEND:20270119T220000Z
+SUMMARY:⚽ Aston Villa x Borussia Dortmund
+DESCRIPTION:Champions League\nhttps://www.espn.com/soccer/match/_/gameId/40
+ 1915279
+LOCATION:Villa Park\, Birmingham
+URL:https://www.espn.com/soccer/match/_/gameId/401915279
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Aston Villa x Borussia Dortmund
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401915274@meus-jogos
+DTSTAMP:20270120T200000Z
+DTSTART:20270120T200000Z
+DTEND:20270120T220000Z
+SUMMARY:⚽ Lens x Manchester City
+DESCRIPTION:Champions League\nhttps://www.espn.com/soccer/match/_/gameId/40
+ 1915274
+LOCATION:Stade Bollaert-Delelis\, Lens
+URL:https://www.espn.com/soccer/match/_/gameId/401915274
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Lens x Manchester City
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401879164@meus-jogos
+DTSTAMP:20270123T150000Z
+DTSTART:20270123T150000Z
+DTEND:20270123T170000Z
+SUMMARY:⚽ Brighton & Hove Albion x Manchester City
+DESCRIPTION:Premier League\nhttps://www.espn.com/soccer/match/_/gameId/4018
+ 79164
+LOCATION:American Express Stadium\, Falmer
+URL:https://www.espn.com/soccer/match/_/gameId/401879164
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Brighton & Hove Albion x Manchester City
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401884659@meus-jogos
+DTSTAMP:20270123T200000Z
+DTSTART:20270123T200000Z
+DTEND:20270123T220000Z
+SUMMARY:⚽ Hamburg SV x Borussia Dortmund
+DESCRIPTION:Bundesliga\nhttps://www.espn.com/soccer/match/_/gameId/40188465
+ 9
+LOCATION:Volksparkstadion\, Hamburg Norderstedt
+URL:https://www.espn.com/soccer/match/_/gameId/401884659
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Hamburg SV x Borussia Dortmund
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401882719@meus-jogos
+DTSTAMP:20270124T200000Z
+DTSTART:20270124T200000Z
+DTEND:20270124T220000Z
+SUMMARY:⚽ Real Madrid x Real Betis
+DESCRIPTION:La Liga\nhttps://www.espn.com/soccer/match/_/gameId/401882719
+LOCATION:Santiago Bernabéu\, Madrid
+URL:https://www.espn.com/soccer/match/_/gameId/401882719
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Real Madrid x Real Betis
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401915352@meus-jogos
+DTSTAMP:20270127T200000Z
+DTSTART:20270127T200000Z
+DTEND:20270127T220000Z
+SUMMARY:⚽ Manchester City x Sporting CP
+DESCRIPTION:Champions League\nhttps://www.espn.com/soccer/match/_/gameId/40
+ 1915352
+LOCATION:Etihad Stadium\, Manchester
+URL:https://www.espn.com/soccer/match/_/gameId/401915352
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Manchester City x Sporting CP
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401915270@meus-jogos
+DTSTAMP:20270127T200000Z
+DTSTART:20270127T200000Z
+DTEND:20270127T220000Z
+SUMMARY:⚽ Shakhtar Donetsk x Real Madrid
+DESCRIPTION:Champions League\nhttps://www.espn.com/soccer/match/_/gameId/40
+ 1915270
+LOCATION:Stamford Bridge\, London
+URL:https://www.espn.com/soccer/match/_/gameId/401915270
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Shakhtar Donetsk x Real Madrid
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401915265@meus-jogos
+DTSTAMP:20270127T200000Z
+DTSTART:20270127T200000Z
+DTEND:20270127T220000Z
+SUMMARY:⚽ Borussia Dortmund x AEK Athens
+DESCRIPTION:Champions League\nhttps://www.espn.com/soccer/match/_/gameId/40
+ 1915265
+LOCATION:Signal Iduna Park\, Aue
+URL:https://www.espn.com/soccer/match/_/gameId/401915265
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Borussia Dortmund x AEK Athens
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401879154@meus-jogos
+DTSTAMP:20270130T150000Z
+DTSTART:20270130T150000Z
+DTEND:20270130T170000Z
+SUMMARY:⚽ Manchester City x Arsenal
+DESCRIPTION:Premier League\nhttps://www.espn.com/soccer/match/_/gameId/4018
+ 79154
+LOCATION:Etihad Stadium\, Manchester
+URL:https://www.espn.com/soccer/match/_/gameId/401879154
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Manchester City x Arsenal
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401884654@meus-jogos
+DTSTAMP:20270130T200000Z
+DTSTART:20270130T200000Z
+DTEND:20270130T220000Z
+SUMMARY:⚽ Borussia Dortmund x TSG Hoffenheim
+DESCRIPTION:Bundesliga\nhttps://www.espn.com/soccer/match/_/gameId/40188465
+ 4
+LOCATION:Signal Iduna Park\, Aue
+URL:https://www.espn.com/soccer/match/_/gameId/401884654
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Borussia Dortmund x TSG Hoffenheim
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401882709@meus-jogos
+DTSTAMP:20270131T200000Z
+DTSTART:20270131T200000Z
+DTEND:20270131T220000Z
+SUMMARY:⚽ Rayo Vallecano x Real Madrid
+DESCRIPTION:La Liga\nhttps://www.espn.com/soccer/match/_/gameId/401882709
+LOCATION:Estadio de Vallecas\, Madrid
+URL:https://www.espn.com/soccer/match/_/gameId/401882709
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Rayo Vallecano x Real Madrid
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401892164@meus-jogos
+DTSTAMP:20270203T190000Z
+DTSTART:20270203T190000Z
+DTEND:20270203T210000Z
+SUMMARY:⚽ Real Sociedad x Real Madrid
+DESCRIPTION:Supercopa da Espanha\nhttps://www.espn.com/soccer/match/_/gameI
+ d/401892164
+LOCATION:Vodafone Park\, Istanbul
+URL:https://www.espn.com/soccer/match/_/gameId/401892164
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Real Sociedad x Real Madrid
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401879150@meus-jogos
+DTSTAMP:20270206T150000Z
+DTSTART:20270206T150000Z
+DTEND:20270206T170000Z
+SUMMARY:⚽ Fulham x Manchester City
+DESCRIPTION:Premier League\nhttps://www.espn.com/soccer/match/_/gameId/4018
+ 79150
+LOCATION:Craven Cottage\, London
+URL:https://www.espn.com/soccer/match/_/gameId/401879150
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Fulham x Manchester City
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401884638@meus-jogos
+DTSTAMP:20270206T200000Z
+DTSTART:20270206T200000Z
+DTEND:20270206T220000Z
+SUMMARY:⚽ SC Paderborn 07 x Borussia Dortmund
+DESCRIPTION:Bundesliga\nhttps://www.espn.com/soccer/match/_/gameId/40188463
+ 8
+LOCATION:Home Deluxe Arena\, Paderborn
+URL:https://www.espn.com/soccer/match/_/gameId/401884638
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ SC Paderborn 07 x Borussia Dortmund
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401882698@meus-jogos
+DTSTAMP:20270207T200000Z
+DTSTART:20270207T200000Z
+DTEND:20270207T220000Z
+SUMMARY:⚽ Real Sociedad x Real Madrid
+DESCRIPTION:La Liga\nhttps://www.espn.com/soccer/match/_/gameId/401882698
+LOCATION:Reale Arena\, San Sebastian
+URL:https://www.espn.com/soccer/match/_/gameId/401882698
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Real Sociedad x Real Madrid
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401879140@meus-jogos
+DTSTAMP:20270210T200000Z
+DTSTART:20270210T200000Z
+DTEND:20270210T220000Z
+SUMMARY:⚽ Tottenham Hotspur x Manchester City
+DESCRIPTION:Premier League\nhttps://www.espn.com/soccer/match/_/gameId/4018
+ 79140
+LOCATION:Tottenham Hotspur Stadium\, London
+URL:https://www.espn.com/soccer/match/_/gameId/401879140
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Tottenham Hotspur x Manchester City
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401884637@meus-jogos
+DTSTAMP:20270213T200000Z
+DTSTART:20270213T200000Z
+DTEND:20270213T220000Z
+SUMMARY:⚽ Borussia Dortmund x VfB Stuttgart
+DESCRIPTION:Bundesliga\nhttps://www.espn.com/soccer/match/_/gameId/40188463
+ 7
+LOCATION:Signal Iduna Park\, Aue
+URL:https://www.espn.com/soccer/match/_/gameId/401884637
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Borussia Dortmund x VfB Stuttgart
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401882691@meus-jogos
+DTSTAMP:20270214T200000Z
+DTSTART:20270214T200000Z
+DTEND:20270214T220000Z
+SUMMARY:⚽ Real Madrid x Athletic Club
+DESCRIPTION:La Liga\nhttps://www.espn.com/soccer/match/_/gameId/401882691
+LOCATION:Santiago Bernabéu\, Madrid
+URL:https://www.espn.com/soccer/match/_/gameId/401882691
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Real Madrid x Athletic Club
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401879135@meus-jogos
+DTSTAMP:20270220T150000Z
+DTSTART:20270220T150000Z
+DTEND:20270220T170000Z
+SUMMARY:⚽ Manchester City x Newcastle United
+DESCRIPTION:Premier League\nhttps://www.espn.com/soccer/match/_/gameId/4018
+ 79135
+LOCATION:Etihad Stadium\, Manchester
+URL:https://www.espn.com/soccer/match/_/gameId/401879135
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Manchester City x Newcastle United
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401884622@meus-jogos
+DTSTAMP:20270220T200000Z
+DTSTART:20270220T200000Z
+DTEND:20270220T220000Z
+SUMMARY:⚽ Werder Bremen x Borussia Dortmund
+DESCRIPTION:Bundesliga\nhttps://www.espn.com/soccer/match/_/gameId/40188462
+ 2
+LOCATION:Weserstadion\, Bremen
+URL:https://www.espn.com/soccer/match/_/gameId/401884622
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Werder Bremen x Borussia Dortmund
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401882678@meus-jogos
+DTSTAMP:20270221T200000Z
+DTSTART:20270221T200000Z
+DTEND:20270221T220000Z
+SUMMARY:⚽ Sevilla x Real Madrid
+DESCRIPTION:La Liga\nhttps://www.espn.com/soccer/match/_/gameId/401882678
+LOCATION:Ramón Sánchez Pizjuán Stadium\, Sevilla
+URL:https://www.espn.com/soccer/match/_/gameId/401882678
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Sevilla x Real Madrid
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401878698@meus-jogos
+DTSTAMP:20270227T150000Z
+DTSTART:20270227T150000Z
+DTEND:20270227T170000Z
+SUMMARY:⚽ Hull City x Manchester City
+DESCRIPTION:Premier League\nhttps://www.espn.com/soccer/match/_/gameId/4018
+ 78698
+LOCATION:The MKM Stadium\, Hull
+URL:https://www.espn.com/soccer/match/_/gameId/401878698
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Hull City x Manchester City
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401884619@meus-jogos
+DTSTAMP:20270227T200000Z
+DTSTART:20270227T200000Z
+DTEND:20270227T220000Z
+SUMMARY:⚽ Borussia Dortmund x 1. FC Union Berlin
+DESCRIPTION:Bundesliga\nhttps://www.espn.com/soccer/match/_/gameId/40188461
+ 9
+LOCATION:Signal Iduna Park\, Aue
+URL:https://www.espn.com/soccer/match/_/gameId/401884619
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Borussia Dortmund x 1. FC Union Berlin
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401882668@meus-jogos
+DTSTAMP:20270228T200000Z
+DTSTART:20270228T200000Z
+DTEND:20270228T220000Z
+SUMMARY:⚽ Real Madrid x Valencia
+DESCRIPTION:La Liga\nhttps://www.espn.com/soccer/match/_/gameId/401882668
+LOCATION:Santiago Bernabéu\, Madrid
+URL:https://www.espn.com/soccer/match/_/gameId/401882668
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Real Madrid x Valencia
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401879124@meus-jogos
+DTSTAMP:20270303T200000Z
+DTSTART:20270303T200000Z
+DTEND:20270303T220000Z
+SUMMARY:⚽ Manchester City x Everton
+DESCRIPTION:Premier League\nhttps://www.espn.com/soccer/match/_/gameId/4018
+ 79124
+LOCATION:Etihad Stadium\, Manchester
+URL:https://www.espn.com/soccer/match/_/gameId/401879124
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Manchester City x Everton
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401884608@meus-jogos
+DTSTAMP:20270303T200000Z
+DTSTART:20270303T200000Z
+DTEND:20270303T220000Z
+SUMMARY:⚽ Eintracht Frankfurt x Borussia Dortmund
+DESCRIPTION:Bundesliga\nhttps://www.espn.com/soccer/match/_/gameId/40188460
+ 8
+LOCATION:Deutsche Bank Park\, Frankfurt
+URL:https://www.espn.com/soccer/match/_/gameId/401884608
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Eintracht Frankfurt x Borussia Dortmund
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401884601@meus-jogos
+DTSTAMP:20270306T200000Z
+DTSTART:20270306T200000Z
+DTEND:20270306T220000Z
+SUMMARY:⚽ Borussia Dortmund x Bayern Munich
+DESCRIPTION:Bundesliga\nhttps://www.espn.com/soccer/match/_/gameId/40188460
+ 1
+LOCATION:Signal Iduna Park\, Aue
+URL:https://www.espn.com/soccer/match/_/gameId/401884601
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Borussia Dortmund x Bayern Munich
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401882657@meus-jogos
+DTSTAMP:20270307T200000Z
+DTSTART:20270307T200000Z
+DTEND:20270307T220000Z
+SUMMARY:⚽ Villarreal x Real Madrid
+DESCRIPTION:La Liga\nhttps://www.espn.com/soccer/match/_/gameId/401882657
+LOCATION:Estadio de la Cerámica\, Villarreal
+URL:https://www.espn.com/soccer/match/_/gameId/401882657
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Villarreal x Real Madrid
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401878692@meus-jogos
+DTSTAMP:20270313T150000Z
+DTSTART:20270313T150000Z
+DTEND:20270313T170000Z
+SUMMARY:⚽ Coventry City x Manchester City
+DESCRIPTION:Premier League\nhttps://www.espn.com/soccer/match/_/gameId/4018
+ 78692
+LOCATION:Coventry Building Society Arena\, Coventry
+URL:https://www.espn.com/soccer/match/_/gameId/401878692
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Coventry City x Manchester City
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401884584@meus-jogos
+DTSTAMP:20270313T200000Z
+DTSTART:20270313T200000Z
+DTEND:20270313T220000Z
+SUMMARY:⚽ SV Elversberg x Borussia Dortmund
+DESCRIPTION:Bundesliga\nhttps://www.espn.com/soccer/match/_/gameId/40188458
+ 4
+LOCATION:URSAPHARM-Arena an der Kaiserlinde\, Spiesen-Elversberg
+URL:https://www.espn.com/soccer/match/_/gameId/401884584
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ SV Elversberg x Borussia Dortmund
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401882647@meus-jogos
+DTSTAMP:20270314T180000Z
+DTSTART:20270314T180000Z
+DTEND:20270314T200000Z
+SUMMARY:⚽ Real Madrid x Espanyol
+DESCRIPTION:La Liga\nhttps://www.espn.com/soccer/match/_/gameId/401882647
+LOCATION:Santiago Bernabéu\, Madrid
+URL:https://www.espn.com/soccer/match/_/gameId/401882647
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Real Madrid x Espanyol
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401879108@meus-jogos
+DTSTAMP:20270320T150000Z
+DTSTART:20270320T150000Z
+DTEND:20270320T170000Z
+SUMMARY:⚽ Manchester City x Manchester United
+DESCRIPTION:Premier League\nhttps://www.espn.com/soccer/match/_/gameId/4018
+ 79108
+LOCATION:Etihad Stadium\, Manchester
+URL:https://www.espn.com/soccer/match/_/gameId/401879108
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Manchester City x Manchester United
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401884583@meus-jogos
+DTSTAMP:20270320T180000Z
+DTSTART:20270320T180000Z
+DTEND:20270320T200000Z
+SUMMARY:⚽ Borussia Dortmund x Borussia Mönchengladbach
+DESCRIPTION:Bundesliga\nhttps://www.espn.com/soccer/match/_/gameId/40188458
+ 3
+LOCATION:Signal Iduna Park\, Aue
+URL:https://www.espn.com/soccer/match/_/gameId/401884583
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Borussia Dortmund x Borussia Mönchengladbach
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401882645@meus-jogos
+DTSTAMP:20270321T180000Z
+DTSTART:20270321T180000Z
+DTEND:20270321T200000Z
+SUMMARY:⚽ Celta Vigo x Real Madrid
+DESCRIPTION:La Liga\nhttps://www.espn.com/soccer/match/_/gameId/401882645
+LOCATION:Balaidos\, Vigo
+URL:https://www.espn.com/soccer/match/_/gameId/401882645
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Celta Vigo x Real Madrid
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401884572@meus-jogos
+DTSTAMP:20270403T180000Z
+DTSTART:20270403T180000Z
+DTEND:20270403T200000Z
+SUMMARY:⚽ Bayer Leverkusen x Borussia Dortmund
+DESCRIPTION:Bundesliga\nhttps://www.espn.com/soccer/match/_/gameId/40188457
+ 2
+LOCATION:BayArena\, Leverkusen
+URL:https://www.espn.com/soccer/match/_/gameId/401884572
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Bayer Leverkusen x Borussia Dortmund
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401882628@meus-jogos
+DTSTAMP:20270404T180000Z
+DTSTART:20270404T180000Z
+DTEND:20270404T200000Z
+SUMMARY:⚽ Real Madrid x Atlético Madrid
+DESCRIPTION:La Liga\nhttps://www.espn.com/soccer/match/_/gameId/401882628
+LOCATION:Santiago Bernabéu\, Madrid
+URL:https://www.espn.com/soccer/match/_/gameId/401882628
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Real Madrid x Atlético Madrid
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401879106@meus-jogos
+DTSTAMP:20270410T140000Z
+DTSTART:20270410T140000Z
+DTEND:20270410T160000Z
+SUMMARY:⚽ AFC Bournemouth x Manchester City
+DESCRIPTION:Premier League\nhttps://www.espn.com/soccer/match/_/gameId/4018
+ 79106
+LOCATION:Vitality Stadium\, Bournemouth
+URL:https://www.espn.com/soccer/match/_/gameId/401879106
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ AFC Bournemouth x Manchester City
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401884565@meus-jogos
+DTSTAMP:20270410T180000Z
+DTSTART:20270410T180000Z
+DTEND:20270410T200000Z
+SUMMARY:⚽ Borussia Dortmund x Schalke 04
+DESCRIPTION:Bundesliga\nhttps://www.espn.com/soccer/match/_/gameId/40188456
+ 5
+LOCATION:Signal Iduna Park\, Aue
+URL:https://www.espn.com/soccer/match/_/gameId/401884565
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Borussia Dortmund x Schalke 04
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401882622@meus-jogos
+DTSTAMP:20270411T180000Z
+DTSTART:20270411T180000Z
+DTEND:20270411T200000Z
+SUMMARY:⚽ Osasuna x Real Madrid
+DESCRIPTION:La Liga\nhttps://www.espn.com/soccer/match/_/gameId/401882622
+LOCATION:El Sadar\, Pamplona
+URL:https://www.espn.com/soccer/match/_/gameId/401882622
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Osasuna x Real Madrid
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401879095@meus-jogos
+DTSTAMP:20270417T140000Z
+DTSTART:20270417T140000Z
+DTEND:20270417T160000Z
+SUMMARY:⚽ Manchester City x Crystal Palace
+DESCRIPTION:Premier League\nhttps://www.espn.com/soccer/match/_/gameId/4018
+ 79095
+LOCATION:Etihad Stadium\, Manchester
+URL:https://www.espn.com/soccer/match/_/gameId/401879095
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Manchester City x Crystal Palace
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401884551@meus-jogos
+DTSTAMP:20270417T180000Z
+DTSTART:20270417T180000Z
+DTEND:20270417T200000Z
+SUMMARY:⚽ FC Augsburg x Borussia Dortmund
+DESCRIPTION:Bundesliga\nhttps://www.espn.com/soccer/match/_/gameId/40188455
+ 1
+LOCATION:WWK Arena\, Augsburg
+URL:https://www.espn.com/soccer/match/_/gameId/401884551
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ FC Augsburg x Borussia Dortmund
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401882610@meus-jogos
+DTSTAMP:20270418T180000Z
+DTSTART:20270418T180000Z
+DTEND:20270418T200000Z
+SUMMARY:⚽ Getafe x Real Madrid
+DESCRIPTION:La Liga\nhttps://www.espn.com/soccer/match/_/gameId/401882610
+LOCATION:Estadio Coliseum\, Getafe
+URL:https://www.espn.com/soccer/match/_/gameId/401882610
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Getafe x Real Madrid
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401882600@meus-jogos
+DTSTAMP:20270421T180000Z
+DTSTART:20270421T180000Z
+DTEND:20270421T200000Z
+SUMMARY:⚽ Real Madrid x Elche
+DESCRIPTION:La Liga\nhttps://www.espn.com/soccer/match/_/gameId/401882600
+LOCATION:Santiago Bernabéu\, Madrid
+URL:https://www.espn.com/soccer/match/_/gameId/401882600
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Real Madrid x Elche
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401879094@meus-jogos
+DTSTAMP:20270424T140000Z
+DTSTART:20270424T140000Z
+DTEND:20270424T160000Z
+SUMMARY:⚽ Chelsea x Manchester City
+DESCRIPTION:Premier League\nhttps://www.espn.com/soccer/match/_/gameId/4018
+ 79094
+LOCATION:Stamford Bridge\, London
+URL:https://www.espn.com/soccer/match/_/gameId/401879094
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Chelsea x Manchester City
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401884547@meus-jogos
+DTSTAMP:20270424T180000Z
+DTSTART:20270424T180000Z
+DTEND:20270424T200000Z
+SUMMARY:⚽ Borussia Dortmund x RB Leipzig
+DESCRIPTION:Bundesliga\nhttps://www.espn.com/soccer/match/_/gameId/40188454
+ 7
+LOCATION:Signal Iduna Park\, Aue
+URL:https://www.espn.com/soccer/match/_/gameId/401884547
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Borussia Dortmund x RB Leipzig
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401879083@meus-jogos
+DTSTAMP:20270501T140000Z
+DTSTART:20270501T140000Z
+DTEND:20270501T160000Z
+SUMMARY:⚽ Manchester City x Brentford
+DESCRIPTION:Premier League\nhttps://www.espn.com/soccer/match/_/gameId/4018
+ 79083
+LOCATION:Etihad Stadium\, Manchester
+URL:https://www.espn.com/soccer/match/_/gameId/401879083
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Manchester City x Brentford
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401882590@meus-jogos
+DTSTAMP:20270502T180000Z
+DTSTART:20270502T180000Z
+DTEND:20270502T200000Z
+SUMMARY:⚽ Levante x Real Madrid
+DESCRIPTION:La Liga\nhttps://www.espn.com/soccer/match/_/gameId/401882590
+LOCATION:Estadi Ciutat de València\, Manises
+URL:https://www.espn.com/soccer/match/_/gameId/401882590
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Levante x Real Madrid
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401878668@meus-jogos
+DTSTAMP:20270508T140000Z
+DTSTART:20270508T140000Z
+DTEND:20270508T160000Z
+SUMMARY:⚽ Manchester City x Liverpool
+DESCRIPTION:Premier League\nhttps://www.espn.com/soccer/match/_/gameId/4018
+ 78668
+LOCATION:Etihad Stadium\, Manchester
+URL:https://www.espn.com/soccer/match/_/gameId/401878668
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Manchester City x Liverpool
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401884533@meus-jogos
+DTSTAMP:20270508T180000Z
+DTSTART:20270508T180000Z
+DTEND:20270508T200000Z
+SUMMARY:⚽ Mainz x Borussia Dortmund
+DESCRIPTION:Bundesliga\nhttps://www.espn.com/soccer/match/_/gameId/40188453
+ 3
+LOCATION:MEWA ARENA\, Mainz
+URL:https://www.espn.com/soccer/match/_/gameId/401884533
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Mainz x Borussia Dortmund
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401882579@meus-jogos
+DTSTAMP:20270509T180000Z
+DTSTART:20270509T180000Z
+DTEND:20270509T200000Z
+SUMMARY:⚽ Real Madrid x Barcelona
+DESCRIPTION:La Liga\nhttps://www.espn.com/soccer/match/_/gameId/401882579
+LOCATION:Santiago Bernabéu\, Madrid
+URL:https://www.espn.com/soccer/match/_/gameId/401882579
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Real Madrid x Barcelona
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401879075@meus-jogos
+DTSTAMP:20270515T140000Z
+DTSTART:20270515T140000Z
+DTEND:20270515T160000Z
+SUMMARY:⚽ Ipswich Town x Manchester City
+DESCRIPTION:Premier League\nhttps://www.espn.com/soccer/match/_/gameId/4018
+ 79075
+LOCATION:Portman Road\, Ipswich
+URL:https://www.espn.com/soccer/match/_/gameId/401879075
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Ipswich Town x Manchester City
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401884529@meus-jogos
+DTSTAMP:20270515T180000Z
+DTSTART:20270515T180000Z
+DTEND:20270515T200000Z
+SUMMARY:⚽ Borussia Dortmund x FC Cologne
+DESCRIPTION:Bundesliga\nhttps://www.espn.com/soccer/match/_/gameId/40188452
+ 9
+LOCATION:Signal Iduna Park\, Aue
+URL:https://www.espn.com/soccer/match/_/gameId/401884529
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Borussia Dortmund x FC Cologne
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401882569@meus-jogos
+DTSTAMP:20270516T180000Z
+DTSTART:20270516T180000Z
+DTEND:20270516T200000Z
+SUMMARY:⚽ Real Madrid x Racing Santander
+DESCRIPTION:La Liga\nhttps://www.espn.com/soccer/match/_/gameId/401882569
+LOCATION:Santiago Bernabéu\, Madrid
+URL:https://www.espn.com/soccer/match/_/gameId/401882569
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Real Madrid x Racing Santander
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401884498@meus-jogos
+DTSTAMP:20270522T133000Z
+DTSTART:20270522T133000Z
+DTEND:20270522T153000Z
+SUMMARY:⚽ SC Freiburg x Borussia Dortmund
+DESCRIPTION:Bundesliga\nhttps://www.espn.com/soccer/match/_/gameId/40188449
+ 8
+LOCATION:Europa-Park Stadion\, Freiburg im Breisgau
+URL:https://www.espn.com/soccer/match/_/gameId/401884498
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ SC Freiburg x Borussia Dortmund
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401879067@meus-jogos
+DTSTAMP:20270523T140000Z
+DTSTART:20270523T140000Z
+DTEND:20270523T160000Z
+SUMMARY:⚽ Manchester City x Aston Villa
+DESCRIPTION:Premier League\nhttps://www.espn.com/soccer/match/_/gameId/4018
+ 79067
+LOCATION:Etihad Stadium\, Manchester
+URL:https://www.espn.com/soccer/match/_/gameId/401879067
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Manchester City x Aston Villa
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401882566@meus-jogos
+DTSTAMP:20270523T180000Z
+DTSTART:20270523T180000Z
+DTEND:20270523T200000Z
+SUMMARY:⚽ Alavés x Real Madrid
+DESCRIPTION:La Liga\nhttps://www.espn.com/soccer/match/_/gameId/401882566
+LOCATION:Mendizorrotza\, Vitoria-Gasteiz
+URL:https://www.espn.com/soccer/match/_/gameId/401882566
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Alavés x Real Madrid
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401878658@meus-jogos
+DTSTAMP:20270530T150000Z
+DTSTART:20270530T150000Z
+DTEND:20270530T170000Z
+SUMMARY:⚽ Sunderland x Manchester City
+DESCRIPTION:Premier League\nhttps://www.espn.com/soccer/match/_/gameId/4018
+ 78658
+LOCATION:Stadium of Light\, Sunderland
+URL:https://www.espn.com/soccer/match/_/gameId/401878658
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Sunderland x Manchester City
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:401882548@meus-jogos
+DTSTAMP:20270530T180000Z
+DTSTART:20270530T180000Z
+DTEND:20270530T200000Z
+SUMMARY:⚽ Real Madrid x Deportivo
+DESCRIPTION:La Liga\nhttps://www.espn.com/soccer/match/_/gameId/401882548
+LOCATION:Santiago Bernabéu\, Madrid
+URL:https://www.espn.com/soccer/match/_/gameId/401882548
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚽ Real Madrid x Deportivo
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+END:VCALENDAR
