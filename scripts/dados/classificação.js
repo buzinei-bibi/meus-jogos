@@ -1,7 +1,7 @@
 // classificação do campeonato nacional de cada time (tabela da espn)
 import { times } from '../../times/index.js';
 import { estado } from '../estado.js';
-import { ligas } from './competicoes.js';
+import { ligas } from './competições.js';
 
 const base = 'https://site.api.espn.com/apis/v2/sports/soccer';
 

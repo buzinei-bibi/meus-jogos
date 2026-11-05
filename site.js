@@ -113,8 +113,8 @@ const todos = { cor: '#d7263d', brilho: 0.6 };
 return { times, meus, todos };
 })();
 
-// ===== scripts/dados/competicoes.js =====
-const m_scripts_dados_competicoes = (() => {
+// ===== scripts/dados/competições.js =====
+const m_scripts_dados_competições = (() => {
 // nomes das competições e fases em português (a espn manda em inglês)
 const ligas = {
   'bra.1': 'Brasileirão',
@@ -202,12 +202,12 @@ function horaFalada(d) {
 return { diaRelativo, falta, horaFalada, fuso, fmtDiaLongo, fmtSemanaCurta, fmtDiaMes, chaveDia, hora };
 })();
 
-// ===== scripts/dados/classificacao.js =====
-const m_scripts_dados_classificacao = (() => {
+// ===== scripts/dados/classificação.js =====
+const m_scripts_dados_classificação = (() => {
 // classificação do campeonato nacional de cada time (tabela da espn)
 const { times } = m_times_index;
 const { estado } = m_scripts_estado;
-const { ligas } = m_scripts_dados_competicoes;
+const { ligas } = m_scripts_dados_competições;
 
 const base = 'https://site.api.espn.com/apis/v2/sports/soccer';
 
@@ -279,9 +279,9 @@ const m_scripts_dados_espn = (() => {
 // busca os jogos na api pública da espn (sem chave, com cors liberado)
 const { times, meus } = m_times_index;
 const { estado, ler, gravar } = m_scripts_estado;
-const { ligas, fases } = m_scripts_dados_competicoes;
+const { ligas, fases } = m_scripts_dados_competições;
 const { chaveDia } = m_scripts_utilidades_datas;
-const { buscarClassificacao } = m_scripts_dados_classificacao;
+const { buscarClassificacao } = m_scripts_dados_classificação;
 
 const base = 'https://site.api.espn.com/apis/site/v2/sports/soccer/all';
 
@@ -682,14 +682,14 @@ function desenharTimes() {
 return { desenharTimes };
 })();
 
-// ===== scripts/tela/classificacao.js =====
-const m_scripts_tela_classificacao = (() => {
+// ===== scripts/tela/classificação.js =====
+const m_scripts_tela_classificação = (() => {
 // seção "classificação": posição de cada time no campeonato nacional.
 // com um time escolhido no filtro, abre também a disputa: quem está colado na tabela (pro líder, o 2º colocado)
 const { estado } = m_scripts_estado;
 const { times } = m_times_index;
 const { esc, trocarHtml } = m_scripts_utilidades_html;
-const { vizinhosNaTabela } = m_scripts_dados_classificacao;
+const { vizinhosNaTabela } = m_scripts_dados_classificação;
 
 // "1º" com o "o" pequeno, no alto e sublinhado, como se escreve à mão
 const ordinal = (n, classe = '') => `<span class="ordinal ${classe}"><span class="ordinal-num">${n}</span><span class="ordinal-o">o</span></span>`;
@@ -750,8 +750,8 @@ function desenharClassificacao() {
 return { desenharClassificacao };
 })();
 
-// ===== scripts/tela/proximos.js =====
-const m_scripts_tela_proximos = (() => {
+// ===== scripts/tela/próximos.js =====
+const m_scripts_tela_próximos = (() => {
 // tabela dos próximos jogos
 const { esc, escudo, nomeTodo, dataBloco, trocarHtml } = m_scripts_utilidades_html;
 const { hora, falta } = m_scripts_utilidades_datas;
@@ -793,7 +793,7 @@ const m_scripts_tela_resultados = (() => {
 const { estado } = m_scripts_estado;
 const { esc, dataBloco, trocarHtml } = m_scripts_utilidades_html;
 const { resultadoPara, nomeResultado, corDe } = m_scripts_dados_jogos;
-const { ladoDoJogo } = m_scripts_tela_proximos;
+const { ladoDoJogo } = m_scripts_tela_próximos;
 
 function linha(e, i) {
   const meuId = estado.filtro !== 'todos' ? estado.filtro : e.meus[0];
@@ -819,8 +819,8 @@ function desenharResultados(lista, temDados) {
 return { desenharResultados };
 })();
 
-// ===== scripts/tela/pagina.js =====
-const m_scripts_tela_pagina = (() => {
+// ===== scripts/tela/página.js =====
+const m_scripts_tela_página = (() => {
 // redesenha a página inteira com o estado atual
 const { estado } = m_scripts_estado;
 const { meus, todos } = m_times_index;
@@ -829,8 +829,8 @@ const { fmtDiaLongo, hora } = m_scripts_utilidades_datas;
 const { separar } = m_scripts_dados_jogos;
 const { desenharHoje } = m_scripts_tela_hoje;
 const { desenharTimes } = m_scripts_tela_times;
-const { desenharClassificacao } = m_scripts_tela_classificacao;
-const { desenharProximos } = m_scripts_tela_proximos;
+const { desenharClassificacao } = m_scripts_tela_classificação;
+const { desenharProximos } = m_scripts_tela_próximos;
 const { desenharResultados } = m_scripts_tela_resultados;
 
 let timerEntrada = null;
@@ -884,7 +884,7 @@ const { estado, trocarFiltro } = m_scripts_estado;
 const { buscarTudo, carregarCache } = m_scripts_dados_espn;
 const { temJogoQuente } = m_scripts_dados_jogos;
 const { salvarPorTime } = m_scripts_dados_arquivo;
-const { desenhar } = m_scripts_tela_pagina;
+const { desenhar } = m_scripts_tela_página;
 
 let timerBusca = null;
 
@@ -922,7 +922,7 @@ document.querySelector('#atualizar')?.addEventListener('click', atualizar);
 
 // botão do calendário: no iphone abre a assinatura direto no app calendário;
 // no android e no computador abre o google agenda já com o calendário pra adicionar
-const calendarioPublico = 'buzinei-bibi.github.io/meus-jogos/calendario.ics';
+const calendarioPublico = 'buzinei-bibi.github.io/meus-jogos/' + encodeURIComponent('calendário.ics');
 const botaoCalendario = document.querySelector('#calendario');
 if (botaoCalendario) {
   const iphone = /iPhone|iPad|iPod|Macintosh/.test(navigator.userAgent) && /Safari/.test(navigator.userAgent) && !/Chrome|CriOS|Android/.test(navigator.userAgent);

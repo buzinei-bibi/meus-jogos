@@ -3,7 +3,7 @@ import { estado, trocarFiltro } from './estado.js';
 import { buscarTudo, carregarCache } from './dados/espn.js';
 import { temJogoQuente } from './dados/jogos.js';
 import { salvarPorTime } from './dados/arquivo.js';
-import { desenhar } from './tela/pagina.js';
+import { desenhar } from './tela/página.js';
 
 let timerBusca = null;
 
@@ -41,7 +41,7 @@ document.querySelector('#atualizar')?.addEventListener('click', atualizar);
 
 // botão do calendário: no iphone abre a assinatura direto no app calendário;
 // no android e no computador abre o google agenda já com o calendário pra adicionar
-const calendarioPublico = 'buzinei-bibi.github.io/meus-jogos/calendario.ics';
+const calendarioPublico = 'buzinei-bibi.github.io/meus-jogos/' + encodeURIComponent('calendário.ics');
 const botaoCalendario = document.querySelector('#calendario');
 if (botaoCalendario) {
   const iphone = /iPhone|iPad|iPod|Macintosh/.test(navigator.userAgent) && /Safari/.test(navigator.userAgent) && !/Chrome|CriOS|Android/.test(navigator.userAgent);

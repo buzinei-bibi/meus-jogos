@@ -1,11 +1,11 @@
-"""gera o calendario.ics com os jogos dos meus times (pra assinar no celular).
+"""gera o calendário.ics com os jogos dos meus times (pra assinar no celular).
 
 - próximos jogos dos 4 times, com campeonato e estádio
 - resultados dos últimos 21 dias, com o placar no título
 - cada jogo tem um lembrete 1 hora antes
 
-roda sozinho no github (.github/workflows/calendario.yml) algumas vezes por dia.
-na mão: python calendario.py   (só usa o que já vem com o python)
+roda sozinho no github (.github/workflows/calendário.yml) algumas vezes por dia.
+na mão: python calendário.py   (só usa o que já vem com o python)
 """
 import json
 import urllib.request
@@ -13,7 +13,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 pasta = Path(__file__).resolve().parent
-saida = pasta / 'calendario.ics'
+saida = pasta / 'calendário.ics'
 base = 'https://site.api.espn.com/apis/site/v2/sports/soccer/all/teams'
 
 # mesmos times do site (times/<time>/time.js)
@@ -129,4 +129,4 @@ linhas.append('END:VCALENDAR')
 
 saida.write_text('\r\n'.join(dobrar(l) for l in linhas) + '\r\n', encoding='utf-8', newline='')
 proximos = sum(1 for e in eventos.values() if e['pre'])
-print(f'calendario.ics: {proximos} próximos jogos e {len(eventos) - proximos} resultados recentes')
+print(f'calendário.ics: {proximos} próximos jogos e {len(eventos) - proximos} resultados recentes')

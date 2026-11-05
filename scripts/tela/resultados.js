@@ -2,7 +2,7 @@
 import { estado } from '../estado.js';
 import { esc, dataBloco, trocarHtml } from '../utilidades/html.js';
 import { resultadoPara, nomeResultado, corDe } from '../dados/jogos.js';
-import { ladoDoJogo } from './proximos.js';
+import { ladoDoJogo } from './próximos.js';
 
 function linha(e, i) {
   const meuId = estado.filtro !== 'todos' ? estado.filtro : e.meus[0];

@@ -6,8 +6,8 @@ import { fmtDiaLongo, hora } from '../utilidades/datas.js';
 import { separar } from '../dados/jogos.js';
 import { desenharHoje } from './hoje.js';
 import { desenharTimes } from './times.js';
-import { desenharClassificacao } from './classificacao.js';
-import { desenharProximos } from './proximos.js';
+import { desenharClassificacao } from './classificação.js';
+import { desenharProximos } from './próximos.js';
 import { desenharResultados } from './resultados.js';
 
 let timerEntrada = null;

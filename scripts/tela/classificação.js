@@ -3,7 +3,7 @@
 import { estado } from '../estado.js';
 import { times } from '../../times/index.js';
 import { esc, trocarHtml } from '../utilidades/html.js';
-import { vizinhosNaTabela } from '../dados/classificacao.js';
+import { vizinhosNaTabela } from '../dados/classificação.js';
 
 // "1º" com o "o" pequeno, no alto e sublinhado, como se escreve à mão
 const ordinal = (n, classe = '') => `<span class="ordinal ${classe}"><span class="ordinal-num">${n}</span><span class="ordinal-o">o</span></span>`;

@@ -30,7 +30,7 @@ MEUS JOGOS/
 │   ├── dados/
 │   │   ├── espn.js       busca os jogos na espn
 │   │   ├── jogos.js      regras: hoje, próximos, resultados, vitória/empate/derrota
-│   │   ├── competicoes.js nomes das competições em português
+│   │   ├── competições.js nomes das competições em português
 │   │   └── arquivo.js    manda os jogos de cada time pro jogos.json da pasta dele
 │   ├── tela/             desenha cada parte da página
 │   └── utilidades/       datas e pedacinhos de html
