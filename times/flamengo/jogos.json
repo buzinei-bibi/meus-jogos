@@ -1,17 +1,16 @@
 {
   "time": "Flamengo",
-  "ao_vivo": [
-    {
-      "data": "2026-11-04",
-      "hora": "19:30",
-      "casa": "Flamengo",
-      "fora": "Grêmio",
-      "campeonato": "Brasileirão",
-      "estadio": "Estadio do Maracana · Rio de Janeiro",
-      "placar": "3 x 1",
-      "situacao": "90'+1'"
-    }
-  ],
+  "classificacao": {
+    "campeonato": "Brasileirão",
+    "posicao": 1,
+    "pontos": 76,
+    "jogos": 34,
+    "vitorias": 23,
+    "empates": 7,
+    "derrotas": 4,
+    "saldo": "+42"
+  },
+  "ao_vivo": [],
   "proximos": [
     {
       "data": "2026-11-18",
@@ -47,6 +46,17 @@
     }
   ],
   "resultados": [
+    {
+      "data": "2026-11-04",
+      "hora": "19:30",
+      "casa": "Flamengo",
+      "fora": "Grêmio",
+      "campeonato": "Brasileirão",
+      "estadio": "Estadio do Maracana · Rio de Janeiro",
+      "placar": "3 x 1",
+      "situacao": "encerrado",
+      "resultado": "vitória"
+    },
     {
       "data": "2026-10-29",
       "hora": "20:00",

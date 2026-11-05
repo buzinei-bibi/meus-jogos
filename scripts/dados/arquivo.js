@@ -31,6 +31,10 @@ export async function salvarPorTime() {
     const deste = todos.filter((e) => e.meus.includes(t.id));
     const conteudo = {
       time: t.nome,
+      classificacao: (() => { // posição, pontos e campanha no campeonato nacional
+        const p = estado.posicoes.get(t.id);
+        return p ? { campeonato: p.liga, posicao: p.posicao, pontos: p.pontos, jogos: p.jogos, vitorias: p.vitorias, empates: p.empates, derrotas: p.derrotas, saldo: p.saldo } : null;
+      })(),
       ao_vivo: deste.filter((e) => e.estado === 'in').map((e) => jogoLegivel(e, t.id)),
       proximos: deste.filter((e) => e.estado === 'pre').sort((a, b) => a.data - b.data).map((e) => jogoLegivel(e, t.id)),
       resultados: deste.filter((e) => e.estado === 'post').sort((a, b) => b.data - a.data).map((e) => jogoLegivel(e, t.id)),

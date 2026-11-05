@@ -28,3 +28,4 @@
 .chip-rival { display: flex; align-items: center; gap: 5px; margin-top: 4px; font-size: 11px; font-weight: 800; color: var(--texto); line-height: 1.2; }
 .chip-rival .escudo { width: 16px; height: 16px; flex: none; }
 .chip-rival i { font-style: normal; color: var(--texto-3); }
+

@@ -63,9 +63,10 @@ button { font: inherit; color: inherit; text-transform: inherit; letter-spacing:
   display: flex; align-items: center; justify-content: space-between;
   padding: 12px clamp(14px, 2.5vw, 32px) 26px;
   margin-bottom: -14px; /* o trecho que esmaece não empurra o conteúdo */
+  /* tingido com a cor do time escolhido (flamengo → topo meio vermelho); --brilho segura amarelos */
   background: linear-gradient(180deg,
-    color-mix(in srgb, var(--tema) calc(var(--brilho) * 14%), rgba(5, 6, 8, .9)) 0%,
-    rgba(5, 6, 8, .7) 55%,
+    color-mix(in srgb, var(--tema) calc(var(--brilho) * 40%), rgba(5, 6, 8, .88)) 0%,
+    color-mix(in srgb, var(--tema) calc(var(--brilho) * 18%), rgba(5, 6, 8, .72)) 55%,
     rgba(5, 6, 8, 0) 100%);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
@@ -126,7 +127,9 @@ button { font: inherit; color: inherit; text-transform: inherit; letter-spacing:
   background: linear-gradient(180deg, var(--tema), color-mix(in srgb, var(--tema) 40%, transparent));
   box-shadow: 0 0 16px color-mix(in srgb, var(--tema) 60%, transparent);
 }
-.bloco-titulo::after { content: ''; flex: 1; min-width: 24px; height: 1px; background: linear-gradient(90deg, var(--borda), transparent); order: 2; }
+.bloco-titulo::after { content: ''; flex: 1; min-width: 24px; height: 1px; background: linear-gradient(90deg, color-mix(in srgb, var(--tema) 45%, transparent), transparent); order: 2; }
+/* títulos das seções na cor do time escolhido (flamengo vermelho, city azul...); clareado um pouco pra ler bem no escuro */
+.bloco-titulo > span:first-child { color: color-mix(in srgb, var(--tema) 82%, #fff); transition: color .9s ease; }
 .data-hoje { color: var(--texto-2); }
 .atualizado { order: 3; color: var(--texto-3); font-family: var(--mono); font-size: 12px; letter-spacing: 0.06em; }
 .aviso { color: #ffb347; }
@@ -158,3 +161,40 @@ button { font: inherit; color: inherit; text-transform: inherit; letter-spacing:
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }
+
+/* ---------- menu da logo ---------- */
+.marca { padding: 0; border: 0; background: none; cursor: pointer; border-radius: 50%; transition: transform .25s var(--mola); }
+.marca:active { transform: scale(.92); }
+.marca-aberta .marca-logo { filter: drop-shadow(0 0 10px color-mix(in srgb, var(--tema) 70%, transparent)); }
+
+/* menu da logo: card natural, igual aos outros cards do site (vidro escuro, borda fina),
+   com um toque da cor do time na borda de cima e nas barrinhas */
+.menu-secoes {
+  position: fixed; z-index: 20; top: 58px; left: clamp(14px, 2.5vw, 32px);
+  display: grid; min-width: 210px; padding: 6px;
+  background: var(--cartao-2);
+  border: 1px solid var(--borda);
+  border-top-color: color-mix(in srgb, var(--tema) 50%, var(--borda));
+  border-radius: 14px;
+  box-shadow: var(--sombra);
+  backdrop-filter: blur(18px) saturate(140%);
+  -webkit-backdrop-filter: blur(18px) saturate(140%);
+  transform-origin: top left;
+  animation: menu-abre .2s ease;
+}
+.menu-secoes[hidden] { display: none; }
+@keyframes menu-abre { from { opacity: 0; transform: translateY(-6px) scale(.97); } }
+.menu-secoes a {
+  display: flex; align-items: center; gap: 10px;
+  padding: 11px 12px; border-radius: 9px;
+  font-size: 12px; font-weight: 800; letter-spacing: .12em; color: color-mix(in srgb, var(--tema) 82%, #fff); /* nome da seção na cor do time */
+  transition: background .15s;
+}
+.menu-secoes a::before { /* barrinha na cor do time */
+  content: ''; width: 3px; height: 14px; border-radius: 3px; flex: none; background: var(--tema);
+}
+.menu-secoes a:hover, .menu-secoes a:focus-visible { background: rgba(255, 255, 255, .06); outline: none; }
+
+/* ao pular pra uma seção, o título não fica escondido embaixo do topo fixo */
+.bloco-titulo { scroll-margin-top: 70px; } /* espaço do topo fixo */
+html { scroll-behavior: smooth; }

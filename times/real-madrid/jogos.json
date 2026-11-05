@@ -1,5 +1,15 @@
 {
   "time": "Real Madrid",
+  "classificacao": {
+    "campeonato": "La Liga",
+    "posicao": 3,
+    "pontos": 27,
+    "jogos": 11,
+    "vitorias": 9,
+    "empates": 0,
+    "derrotas": 2,
+    "saldo": "+18"
+  },
   "ao_vivo": [],
   "proximos": [
     {

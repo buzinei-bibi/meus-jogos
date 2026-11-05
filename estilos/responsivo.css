@@ -1,19 +1,27 @@
-/* ajustes pra tablet e celular */
-@media (max-width: 960px) {
-  /* "todos" ocupa a linha de cima e os 4 times seguem lado a lado */
-  .filtros { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-  .chip-todos { grid-column: 1 / -1; min-height: 48px; flex-direction: row; align-items: center; gap: 10px; }
-  .cabeca-agenda, .linha { grid-template-columns: 56px 52px minmax(0, 1fr) 140px; }
-  .cabeca-resultados, .resultado { grid-template-columns: 56px minmax(0, 1fr) 140px 26px; }
+/* ajustes por tamanho de tela:
+   > 1100px  desktop e mac (4 jogos / 4 times na mesma linha)
+   ≤ 1100px  notebook pequeno e ipad deitado (cards um pouco mais estreitos pra caber 4)
+   ≤ 960px   tablet em pé (2 por linha, meus times em lista de 2 colunas)
+   ≤ 720px   celular deitado e celular grande (1 por linha, listas empilhadas)
+   ≤ 560px   celular (topo compacto)
+   ≤ 400px   celular pequeno (fontes e escudos menores pra nada cortar) */
+
+@media (max-width: 1100px) {
+  .hoje, .classificacao { grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); }
+  /* time escolhido: card do time + tabela ao lado */
+  .classificacao.classificacao-aberta { grid-template-columns: minmax(230px, 300px) minmax(0, 1fr); }
 }
 
-/* ============ celular e tablet pequeno ============ */
-@media (max-width: 720px) {
-  /* meus times vira lista:
+/* ============ tablet ============ */
+@media (max-width: 960px) {
+  /* 2 por linha (ou 1 esticado, se só tiver um jogo) — nada de 3 + 1 sobrando */
+  .hoje, .classificacao { grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); }
+
+  /* meus times vira lista em 2 colunas:
      [escudo] NOME DO TIME ............ SÁB · 14:30
               X (escudo) ADVERSÁRIO                      */
-  .filtros { grid-template-columns: 1fr; gap: 8px; }
-  .chip-todos { min-height: 0; padding: 12px 16px; flex-direction: row; justify-content: flex-start; align-items: baseline; gap: 8px; }
+  .filtros { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+  .chip-todos { grid-column: 1 / -1; min-height: 0; padding: 12px 16px; flex-direction: row; justify-content: flex-start; align-items: baseline; gap: 8px; }
   .chip:not(.chip-todos) {
     display: grid; grid-template-columns: 34px minmax(0, 1fr) auto;
     column-gap: 12px; row-gap: 4px; align-items: center;
@@ -25,40 +33,24 @@
   .chip-sub { grid-column: 3; grid-row: 1; text-align: right; white-space: nowrap; font-family: var(--mono); font-size: 11px; color: var(--texto-2); }
   .chip-rival { grid-column: 2 / 4; grid-row: 2; margin: 0; font-size: 12px; color: var(--texto-2); }
   .chip-rival span { color: var(--texto); }
+
+  .cabeca-agenda, .linha { grid-template-columns: 56px 52px minmax(0, 1fr) 140px; }
+  .cabeca-resultados, .resultado { grid-template-columns: 56px minmax(0, 1fr) 140px 26px; }
 }
 
-@media (max-width: 560px) {
-  .topo { padding: 10px 12px 24px; }
-  .bloco { margin-top: 28px; }
-  .bloco-titulo > span:first-child { font-size: 22px; }
+/* ============ celular deitado e celular grande ============ */
+@media (max-width: 720px) {
+  .filtros { grid-template-columns: 1fr; }
+  .classificacao.classificacao-aberta { grid-template-columns: 1fr; }
+  .cartao:hover, .linha:hover, .resultado:hover, .tabela:hover { transform: none; } /* no toque o "pulinho" do hover fica preso */
 
-  /* título de hoje: HOJE ...... ATUALIZADO 20:51  /  data inteira embaixo */
-  .bloco-hoje .bloco-titulo { row-gap: 4px; }
-  .bloco-hoje .bloco-titulo::after { display: none; }
-  .bloco-hoje .atualizado { order: 1; margin-left: auto; }
-  .bloco-hoje .data-hoje { order: 2; flex-basis: 100%; font-size: 11px; letter-spacing: .12em; color: var(--texto-3); }
-
-  /* jogos de hoje: um card por linha, largura toda pro nome caber inteiro */
-  .hoje { grid-template-columns: 1fr; gap: 10px; }
-  .cartao { padding: 12px 14px 14px; }
-  .cartao:hover { transform: none; } /* no toque o "pulinho" do hover fica preso; tira */
-  .cartao-topo { flex-direction: row; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 6px 10px; margin-bottom: 10px; }
-  .liga { font-size: 10px; }
-  .selo { font-size: 10px; padding: 3px 8px; }
-  .pt-linha { grid-template-columns: 28px minmax(0, 1fr) auto; gap: 12px; }
-  .pt-linha .escudo { width: 28px; height: 28px; }
-  .time-nome { font-size: 14px; }
-  .pt-gols { font-size: 28px; }
-
-  /* listas em duas colunas: à esquerda QUANDO (data + hora), à direita O QUÊ (times + campeonato) */
+  /* listas em duas colunas: à esquerda QUANDO (data + hora), à direita O QUÊ (campeonato + times) */
   .painel-cabeca { display: none; }
   .linha, .resultado { column-gap: 14px; row-gap: 6px; padding: 14px 14px 14px 20px; align-items: start; }
-  .linha:hover, .resultado:hover { transform: none; }
   .linha {
     grid-template-columns: 50px minmax(0, 1fr);
-    /* campeonato em cima, times embaixo; hora fica colada embaixo da data */
     grid-template-areas: "data liga" "data jogo" "hora jogo";
-    grid-template-rows: auto auto 1fr;
+    grid-template-rows: auto auto 1fr; /* hora fica colada embaixo da data */
   }
   .linha-liga > span { color: var(--cor); }
   .linha .data-bloco { grid-area: data; }
@@ -93,4 +85,61 @@
   .gol-casa, .gol-fora { grid-column: 2; font-family: var(--titulo); font-size: 22px; line-height: 1; text-align: right; }
   .gol-casa { grid-row: 1; }
   .gol-fora { grid-row: 2; }
+}
+
+/* ============ celular ============ */
+@media (max-width: 560px) {
+  /* topo compacto */
+  .topo { padding: 8px 12px 18px; margin-bottom: -10px; }
+  .marca-logo { width: 30px; height: 30px; }
+  .menu-secoes { top: 50px; left: 12px; }
+  .topo-acoes { gap: 6px; }
+  .botao-ouvir, .botao-atualizar { width: 34px; height: 34px; }
+  .botao-ouvir svg, .botao-atualizar svg { width: 15px; height: 15px; }
+  .bloco { margin-top: 28px; }
+  .bloco-titulo > span:first-child { font-size: 22px; }
+
+  /* título de hoje: HOJE ...... ATUALIZADO 20:51  /  data inteira embaixo */
+  .bloco-hoje .bloco-titulo { row-gap: 4px; }
+  .bloco-hoje .bloco-titulo::after { display: none; }
+  .bloco-hoje .atualizado { order: 1; margin-left: auto; }
+  .bloco-hoje .data-hoje { order: 2; flex-basis: 100%; font-size: 11px; letter-spacing: .12em; color: var(--texto-3); }
+
+  /* jogos de hoje: um card por linha, largura toda pro nome caber inteiro */
+  .hoje { gap: 10px; }
+  .cartao { padding: 12px 14px 14px; }
+  .cartao-topo { flex-direction: row; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 6px 10px; margin-bottom: 10px; }
+  .liga { font-size: 10px; }
+  .selo { font-size: 10px; padding: 3px 8px; }
+  .pt-linha { grid-template-columns: 28px minmax(0, 1fr) auto; gap: 12px; }
+  .pt-linha .escudo { width: 28px; height: 28px; }
+  .time-nome { font-size: 14px; }
+  .pt-gols { font-size: 28px; }
+}
+
+/* ============ celular pequeno (iphone se, 320–400px) ============ */
+@media (max-width: 400px) {
+  .pagina { padding-left: 12px; padding-right: 12px; }
+
+  /* meus times: dia/hora desce pra baixo do nome, em vez de disputar a mesma linha */
+  .chip:not(.chip-todos) { grid-template-columns: 30px minmax(0, 1fr); column-gap: 10px; padding: 10px 12px 10px 16px; }
+  .chip > .escudo { grid-row: 1 / 4; width: 30px; height: 30px; }
+  .chip-nome { font-size: 13px; }
+  .chip-sub { grid-column: 2; grid-row: 2; text-align: left; white-space: normal; }
+  .chip-rival { grid-column: 2; grid-row: 3; font-size: 11px; }
+
+  /* listas e cards: letra e escudo um pouco menores */
+  .linha, .resultado { column-gap: 10px; padding: 12px 10px 12px 16px; }
+  .linha { grid-template-columns: 44px minmax(0, 1fr); }
+  .resultado { grid-template-columns: 44px minmax(0, 1fr) 22px; }
+  .res-letra { width: 22px; height: 22px; font-size: 11px; }
+  .lado { gap: 8px; font-size: 12px; }
+  .lado .escudo { width: 18px; height: 18px; }
+  .gol-casa, .gol-fora { font-size: 20px; }
+  .time-nome { font-size: 13px; }
+  .pt-linha { grid-template-columns: 24px minmax(0, 1fr) auto; gap: 10px; }
+  .pt-linha .escudo { width: 24px; height: 24px; }
+  .tabela { grid-template-columns: 42px minmax(0, 1fr) auto; column-gap: 10px; }
+  .tabela .ordinal-num { font-size: 40px; }
+  .tabela-nome { font-size: 13px; }
 }

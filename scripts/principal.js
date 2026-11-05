@@ -5,6 +5,7 @@ import { temJogoQuente } from './dados/jogos.js';
 import { salvarPorTime } from './dados/arquivo.js';
 import { desenhar } from './tela/pagina.js';
 import { falar } from './voz/narrador.js';
+import { ligarMenu } from './tela/menu.js';
 
 let timerBusca = null;
 let primeiraBusca = true;
@@ -36,6 +37,7 @@ document.querySelector('#ouvir').addEventListener('click', falar);
 document.addEventListener('visibilitychange', () => { if (!document.hidden) atualizar(); });
 setInterval(desenhar, 30e3); // contagens regressivas andam mesmo sem buscar
 
+ligarMenu();
 carregarCache();
 desenhar();
 atualizar();

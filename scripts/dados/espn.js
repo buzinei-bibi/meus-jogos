@@ -3,6 +3,7 @@ import { times, meus } from '../../times/index.js';
 import { estado, ler, gravar } from '../estado.js';
 import { ligas, fases } from './competicoes.js';
 import { chaveDia } from '../utilidades/datas.js';
+import { buscarClassificacao } from './classificacao.js';
 
 const base = 'https://site.api.espn.com/apis/site/v2/sports/soccer/all';
 
@@ -94,15 +95,23 @@ export async function buscarTudo() {
   // placar ao vivo: o calendário não traz placar de jogo rolando, então pergunta jogo a jogo
   const hoje = chaveDia(new Date());
   const doDia = [...estado.eventos.values()].filter((e) => e.meus.length && (e.estado === 'in' || (chaveDia(e.data) === hoje && e.data - Date.now() < 15 * 6e4)));
-  await Promise.allSettled(doDia.map(async (e) => {
-    const d = await pegar(`${base}/summary?event=${e.id}`);
-    const comp = d.header?.competitions?.[0];
-    if (comp) juntar(normalizar({ ...d.header, id: e.id, date: comp.date, links: d.header.links }, comp, d.header.league || { slug: e.ligaSlug }));
-  }));
+  await Promise.allSettled([
+    ...doDia.map(async (e) => {
+      const d = await pegar(`${base}/summary?event=${e.id}`);
+      const comp = d.header?.competitions?.[0];
+      if (comp) juntar(normalizar({ ...d.header, id: e.id, date: comp.date, links: d.header.links }, comp, d.header.league || { slug: e.ligaSlug }));
+    }),
+    buscarClassificacao(), // posição de cada time na tabela, junto com os placares
+  ]);
 
   estado.ultimaAtualizacao = new Date();
   estado.erro = null;
-  gravar('meus-jogos:cache', JSON.stringify({ quando: estado.ultimaAtualizacao, eventos: [...estado.eventos.values()] }));
+  gravar('meus-jogos:cache', JSON.stringify({
+    quando: estado.ultimaAtualizacao,
+    eventos: [...estado.eventos.values()],
+    posicoes: [...estado.posicoes],
+    tabelas: [...estado.tabelas],
+  }));
 }
 
 // mostra os últimos dados na hora, enquanto a busca nova não chega
@@ -111,6 +120,8 @@ export function carregarCache() {
     const c = JSON.parse(ler('meus-jogos:cache') || 'null');
     if (!c) return;
     for (const e of c.eventos) estado.eventos.set(e.id, { ...e, data: new Date(e.data) });
+    for (const [id, p] of c.posicoes || []) estado.posicoes.set(id, p);
+    for (const [liga, t] of c.tabelas || []) estado.tabelas.set(liga, t);
     estado.ultimaAtualizacao = new Date(c.quando);
   } catch { /* cache quebrado, ignora */ }
 }
