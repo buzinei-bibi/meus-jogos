@@ -1,0 +1,96 @@
+/* ajustes pra tablet e celular */
+@media (max-width: 960px) {
+  /* "todos" ocupa a linha de cima e os 4 times seguem lado a lado */
+  .filtros { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .chip-todos { grid-column: 1 / -1; min-height: 48px; flex-direction: row; align-items: center; gap: 10px; }
+  .cabeca-agenda, .linha { grid-template-columns: 56px 52px minmax(0, 1fr) 140px; }
+  .cabeca-resultados, .resultado { grid-template-columns: 56px minmax(0, 1fr) 140px 26px; }
+}
+
+/* ============ celular e tablet pequeno ============ */
+@media (max-width: 720px) {
+  /* meus times vira lista:
+     [escudo] NOME DO TIME ............ SÁB · 14:30
+              X (escudo) ADVERSÁRIO                      */
+  .filtros { grid-template-columns: 1fr; gap: 8px; }
+  .chip-todos { min-height: 0; padding: 12px 16px; flex-direction: row; justify-content: flex-start; align-items: baseline; gap: 8px; }
+  .chip:not(.chip-todos) {
+    display: grid; grid-template-columns: 34px minmax(0, 1fr) auto;
+    column-gap: 12px; row-gap: 4px; align-items: center;
+    min-height: 0; padding: 12px 14px 12px 18px;
+  }
+  .chip-texto { display: contents; }
+  .chip > .escudo { grid-column: 1; grid-row: 1 / 3; width: 34px; height: 34px; }
+  .chip-nome { grid-column: 2; grid-row: 1; font-size: 14px; }
+  .chip-sub { grid-column: 3; grid-row: 1; text-align: right; white-space: nowrap; font-family: var(--mono); font-size: 11px; color: var(--texto-2); }
+  .chip-rival { grid-column: 2 / 4; grid-row: 2; margin: 0; font-size: 12px; color: var(--texto-2); }
+  .chip-rival span { color: var(--texto); }
+}
+
+@media (max-width: 560px) {
+  .topo { padding: 10px 12px 24px; }
+  .bloco { margin-top: 28px; }
+  .bloco-titulo > span:first-child { font-size: 22px; }
+
+  /* título de hoje: HOJE ...... ATUALIZADO 20:51  /  data inteira embaixo */
+  .bloco-hoje .bloco-titulo { row-gap: 4px; }
+  .bloco-hoje .bloco-titulo::after { display: none; }
+  .bloco-hoje .atualizado { order: 1; margin-left: auto; }
+  .bloco-hoje .data-hoje { order: 2; flex-basis: 100%; font-size: 11px; letter-spacing: .12em; color: var(--texto-3); }
+
+  /* jogos de hoje: um card por linha, largura toda pro nome caber inteiro */
+  .hoje { grid-template-columns: 1fr; gap: 10px; }
+  .cartao { padding: 12px 14px 14px; }
+  .cartao:hover { transform: none; } /* no toque o "pulinho" do hover fica preso; tira */
+  .cartao-topo { flex-direction: row; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 6px 10px; margin-bottom: 10px; }
+  .liga { font-size: 10px; }
+  .selo { font-size: 10px; padding: 3px 8px; }
+  .pt-linha { grid-template-columns: 28px minmax(0, 1fr) auto; gap: 12px; }
+  .pt-linha .escudo { width: 28px; height: 28px; }
+  .time-nome { font-size: 14px; }
+  .pt-gols { font-size: 28px; }
+
+  /* listas em duas colunas: à esquerda QUANDO (data + hora), à direita O QUÊ (times + campeonato) */
+  .painel-cabeca { display: none; }
+  .linha, .resultado { column-gap: 14px; row-gap: 6px; padding: 14px 14px 14px 20px; align-items: start; }
+  .linha:hover, .resultado:hover { transform: none; }
+  .linha {
+    grid-template-columns: 50px minmax(0, 1fr);
+    /* campeonato em cima, times embaixo; hora fica colada embaixo da data */
+    grid-template-areas: "data liga" "data jogo" "hora jogo";
+    grid-template-rows: auto auto 1fr;
+  }
+  .linha-liga > span { color: var(--cor); }
+  .linha .data-bloco { grid-area: data; }
+  .linha-hora { grid-area: hora; align-self: start; margin-top: 4px; font-size: 13px; }
+  .linha-jogo { grid-area: jogo; }
+  .linha-liga { grid-area: liga; flex-direction: row; justify-content: space-between; align-items: baseline; gap: 8px; text-align: left; }
+  .resultado {
+    grid-template-columns: 50px minmax(0, 1fr) 24px;
+    grid-template-areas: "data jogo letra" "data liga letra";
+    align-items: center;
+  }
+  .resultado .data-bloco { grid-area: data; align-self: start; }
+  .res-jogo { grid-area: jogo; }
+  .res-liga { grid-area: liga; text-align: left; }
+  .res-letra { grid-area: letra; }
+  .linha::before, .resultado::before { top: 16px; margin-top: 0; }
+
+  /* um time por linha, com o escudo antes do nome */
+  .linha-jogo, .res-jogo { grid-template-columns: minmax(0, 1fr) auto; row-gap: 8px; column-gap: 10px; }
+  .linha-jogo { grid-template-columns: minmax(0, 1fr); }
+  .linha-jogo .lado, .res-jogo .lado { grid-column: 1; }
+  .linha-x { display: none; }
+  .lado { gap: 10px; font-size: 14px; }
+  .lado .escudo { width: 22px; height: 22px; }
+  .lado-casa { flex-direction: row-reverse; justify-content: flex-end; text-align: left; }
+
+  /* resultados: gols na mesma linha de cada time */
+  .res-placar { display: contents; }
+  .res-placar i { display: none; }
+  .res-jogo .lado-casa { grid-row: 1; }
+  .res-jogo .lado:not(.lado-casa) { grid-row: 2; }
+  .gol-casa, .gol-fora { grid-column: 2; font-family: var(--titulo); font-size: 22px; line-height: 1; text-align: right; }
+  .gol-casa { grid-row: 1; }
+  .gol-fora { grid-row: 2; }
+}

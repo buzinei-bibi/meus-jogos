@@ -1,0 +1,35 @@
+// nomes das competições e fases em português (a espn manda em inglês)
+export const ligas = {
+  'bra.1': 'Brasileirão',
+  'bra.copa_do_brazil': 'Copa do Brasil',
+  'bra.camp.carioca': 'Carioca',
+  'conmebol.libertadores': 'Libertadores',
+  'conmebol.recopa': 'Recopa',
+  'bra.supercopa_do_brazil': 'Supercopa do Brasil',
+  'eng.1': 'Premier League',
+  'eng.fa': 'Copa da Inglaterra',
+  'eng.league_cup': 'Copa da Liga Inglesa',
+  'eng.charity': 'Supercopa da Inglaterra',
+  'esp.1': 'La Liga',
+  'esp.copa_del_rey': 'Copa do Rei',
+  'esp.super_cup': 'Supercopa da Espanha',
+  'ger.1': 'Bundesliga',
+  'ger.dfb_pokal': 'Copa da Alemanha',
+  'ger.super_cup': 'Supercopa da Alemanha',
+  'uefa.champions': 'Champions League',
+  'uefa.super_cup': 'Supercopa da UEFA',
+  'fifa.cwc': 'Mundial de Clubes',
+  'fifa.intercontinental_cup': 'Intercontinental',
+  'club.friendly': 'Amistoso',
+};
+
+export const fases = {
+  'League Phase': 'fase de liga',
+  'Knockout Round Playoffs': 'playoff',
+  'Round of 32': '16 avos',
+  'Round of 16': 'oitavas',
+  'Quarterfinals': 'quartas',
+  'Semifinals': 'semifinal',
+  'Final': 'final',
+  'Group Stage': 'fase de grupos',
+};

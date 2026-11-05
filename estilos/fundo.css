@@ -1,0 +1,45 @@
+/* fundo: gradiente vivo na cor do time escolhido.
+   --brilho (0 a 1) vem do time.js de cada time: amarelos e dourados ficam mais suaves */
+.palco {
+  position: fixed; inset: 0; z-index: 0; pointer-events: none; overflow: hidden;
+  background:
+    linear-gradient(165deg,
+      color-mix(in srgb, var(--tema) calc(var(--brilho) * 16%), #07080d) 0%,
+      #07080d 40%,
+      color-mix(in srgb, color-mix(in srgb, var(--tema) 40%, #3a1cff) calc(var(--brilho) * 12%), #06070b) 100%);
+}
+
+/* três manchas de luz que flutuam devagar e se misturam */
+.refletor, .brilho-chao {
+  position: absolute; border-radius: 50%; filter: blur(90px); mix-blend-mode: screen; will-change: transform;
+}
+.refletor-esq {
+  width: 62vmax; height: 62vmax; left: -18vmax; top: -24vmax;
+  background: radial-gradient(circle, color-mix(in srgb, var(--tema) 70%, transparent), transparent 65%);
+  opacity: calc(var(--brilho) * .5);
+  animation: flutuar-a 22s ease-in-out infinite alternate;
+}
+.refletor-dir {
+  width: 54vmax; height: 54vmax; right: -20vmax; top: 18vh;
+  background: radial-gradient(circle, color-mix(in srgb, color-mix(in srgb, var(--tema) 50%, #6a3bff) 65%, transparent), transparent 65%);
+  opacity: calc(var(--brilho) * .36);
+  animation: flutuar-b 28s ease-in-out infinite alternate;
+}
+.brilho-chao {
+  width: 70vmax; height: 46vmax; left: 10vw; bottom: -30vmax;
+  background: radial-gradient(circle, color-mix(in srgb, color-mix(in srgb, var(--tema) 55%, #00b7ff) 55%, transparent), transparent 65%);
+  opacity: calc(var(--brilho) * .3);
+  animation: flutuar-c 25s ease-in-out infinite alternate;
+}
+@keyframes flutuar-a { to { transform: translate(14vw, 10vh) scale(1.12); } }
+@keyframes flutuar-b { to { transform: translate(-12vw, -14vh) scale(.9); } }
+@keyframes flutuar-c { to { transform: translate(18vw, -8vh) scale(1.15); } }
+
+.palco::before { /* vinheta pra segurar o olhar no conteúdo */
+  content: ''; position: absolute; inset: 0; z-index: 1;
+  background: radial-gradient(130% 100% at 50% 30%, transparent 45%, rgba(0, 0, 0, .65));
+}
+.palco::after { /* grão fino, tira o aspecto "chapado" do gradiente */
+  content: ''; position: absolute; inset: 0; z-index: 2; opacity: .07; mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E");
+}

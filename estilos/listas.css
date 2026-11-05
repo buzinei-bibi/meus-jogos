@@ -1,0 +1,65 @@
+/* listas: tabela de próximos jogos e de últimos resultados */
+.painel {
+  background: var(--cartao); border: 1px solid var(--borda); border-radius: var(--raio);
+  border-top-color: color-mix(in srgb, var(--tema) 35%, var(--borda));
+  box-shadow: var(--sombra); overflow: hidden;
+}
+.painel:empty { display: none; }
+.painel-vazio { padding: 22px 20px; color: var(--texto-2); font-weight: 700; }
+
+.painel-cabeca {
+  display: grid; gap: 12px; align-items: center;
+  padding: 10px 16px 10px 20px;
+  background: rgba(255, 255, 255, 0.03);
+  border-bottom: 1px solid var(--borda);
+  font-size: 10px; font-weight: 800; letter-spacing: .16em; color: var(--texto-3);
+}
+.painel-cabeca span:nth-child(3) { text-align: center; }
+.painel-cabeca span:last-child { text-align: right; }
+
+.linha, .resultado {
+  position: relative; display: grid; align-items: center; gap: 12px;
+  padding: 10px 16px 10px 20px;
+  border-bottom: 1px solid var(--linha);
+  transition: background .2s, transform .3s var(--mola);
+}
+.linha:last-child, .resultado:last-child { border-bottom: 0; }
+.linha::before, .resultado::before { /* risquinho da cor do time */
+  content: ''; position: absolute; left: 8px; top: 50%; width: 4px; height: 22px; margin-top: -11px;
+  border-radius: 4px; background: var(--cor);
+  transition: height .3s var(--mola), margin-top .3s var(--mola);
+}
+.linha:hover, .resultado:hover { background: color-mix(in srgb, var(--cor) 9%, transparent); transform: translateX(3px); }
+.linha:hover::before, .resultado:hover::before { height: 36px; margin-top: -18px; }
+.linha:hover .escudo, .resultado:hover .escudo { transform: scale(1.15); }
+
+.cabeca-agenda, .linha { grid-template-columns: 56px 52px minmax(0, 1fr) 190px; }
+.cabeca-resultados, .resultado { grid-template-columns: 56px minmax(0, 1fr) 190px 26px; }
+
+.data-bloco { display: flex; flex-direction: column; line-height: 1.05; }
+.data-bloco small { font-size: 10px; font-weight: 800; letter-spacing: .14em; color: var(--texto-3); }
+.data-bloco b { font-family: var(--mono); font-size: 14px; font-weight: 700; }
+.linha-hora { font-family: var(--mono); font-weight: 700; font-size: 14px; color: var(--cor); }
+
+.linha-jogo, .res-jogo { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: center; gap: 8px; min-width: 0; }
+.lado { display: flex; align-items: center; gap: 8px; min-width: 0; font-size: 13px; font-weight: 700; color: var(--texto-2); }
+.lado-nome { min-width: 0; line-height: 1.2; }
+.lado-casa { justify-content: flex-end; text-align: right; }
+.lado-meu { color: var(--texto); font-weight: 800; }
+.lado .escudo { flex: none; transition: transform .35s var(--mola); }
+.linha-x { color: var(--texto-3); font-size: 11px; }
+
+.linha-liga { display: flex; flex-direction: column; align-items: flex-end; text-align: right; min-width: 0; }
+.linha-liga > span, .res-liga { font-size: 11px; font-weight: 700; color: var(--texto-2); line-height: 1.3; max-width: 100%; }
+.linha-liga small { font-family: var(--mono); font-size: 10px; color: var(--texto-3); white-space: nowrap; }
+.res-liga { text-align: right; }
+
+.res-placar { font-family: var(--titulo); font-size: 20px; line-height: 1; font-variant-numeric: tabular-nums; display: flex; gap: 5px; }
+.res-placar i { font-style: normal; color: var(--texto-3); }
+.res-letra {
+  display: grid; place-items: center; width: 24px; height: 24px; border-radius: 7px;
+  font-weight: 800; font-size: 12px; color: #050608;
+}
+.res-v { background: var(--vitoria); }
+.res-e { background: var(--empate); }
+.res-d { background: var(--derrota); }

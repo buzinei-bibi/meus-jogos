@@ -1,0 +1,478 @@
+{
+  "time": "Manchester City",
+  "ao_vivo": [],
+  "proximos": [
+    {
+      "data": "2026-11-07",
+      "hora": "14:30",
+      "casa": "Nottingham Forest",
+      "fora": "Manchester City",
+      "campeonato": "Premier League",
+      "estadio": "The City Ground · Nottingham"
+    },
+    {
+      "data": "2026-11-21",
+      "hora": "09:30",
+      "casa": "Manchester City",
+      "fora": "Fulham",
+      "campeonato": "Premier League",
+      "estadio": "Etihad Stadium · Manchester"
+    },
+    {
+      "data": "2026-11-24",
+      "hora": "17:00",
+      "casa": "Manchester City",
+      "fora": "Napoli",
+      "campeonato": "Champions League · fase de liga",
+      "estadio": "Etihad Stadium · Manchester"
+    },
+    {
+      "data": "2026-11-29",
+      "hora": "13:30",
+      "casa": "Arsenal",
+      "fora": "Manchester City",
+      "campeonato": "Premier League",
+      "estadio": "Emirates Stadium · London"
+    },
+    {
+      "data": "2026-12-02",
+      "hora": "16:30",
+      "casa": "Manchester City",
+      "fora": "Leeds United",
+      "campeonato": "Premier League",
+      "estadio": "Etihad Stadium · Manchester"
+    },
+    {
+      "data": "2026-12-05",
+      "hora": "17:00",
+      "casa": "Brentford",
+      "fora": "Manchester City",
+      "campeonato": "Premier League",
+      "estadio": "Gtech Community Stadium · Brentford"
+    },
+    {
+      "data": "2026-12-08",
+      "hora": "17:00",
+      "casa": "Barcelona",
+      "fora": "Manchester City",
+      "campeonato": "Champions League · fase de liga",
+      "estadio": "Spotify Camp Nou · Barcelona"
+    },
+    {
+      "data": "2026-12-12",
+      "hora": "14:30",
+      "casa": "Manchester City",
+      "fora": "Chelsea",
+      "campeonato": "Premier League",
+      "estadio": "Etihad Stadium · Manchester"
+    },
+    {
+      "data": "2026-12-15",
+      "hora": "17:00",
+      "casa": "Manchester City",
+      "fora": "Bradford City",
+      "campeonato": "Copa da Liga Inglesa · quartas",
+      "estadio": "Etihad Stadium · Manchester"
+    },
+    {
+      "data": "2026-12-19",
+      "hora": "12:00",
+      "casa": "Manchester City",
+      "fora": "Hull City",
+      "campeonato": "Premier League",
+      "estadio": "Etihad Stadium · Manchester"
+    },
+    {
+      "data": "2026-12-26",
+      "hora": "17:00",
+      "casa": "Newcastle United",
+      "fora": "Manchester City",
+      "campeonato": "Premier League",
+      "estadio": "St. James' Park · Newcastle-upon-Tyne"
+    },
+    {
+      "data": "2026-12-29",
+      "hora": "17:15",
+      "casa": "Everton",
+      "fora": "Manchester City",
+      "campeonato": "Premier League",
+      "estadio": "Hill Dickinson Stadium · Liverpool"
+    },
+    {
+      "data": "2027-01-03",
+      "hora": "13:30",
+      "casa": "Manchester City",
+      "fora": "Tottenham Hotspur",
+      "campeonato": "Premier League",
+      "estadio": "Etihad Stadium · Manchester"
+    },
+    {
+      "data": "2027-01-06",
+      "hora": "17:15",
+      "casa": "Leeds United",
+      "fora": "Manchester City",
+      "campeonato": "Premier League",
+      "estadio": "Elland Road · Leeds"
+    },
+    {
+      "data": "2027-01-16",
+      "hora": "12:00",
+      "casa": "Manchester City",
+      "fora": "Nottingham Forest",
+      "campeonato": "Premier League",
+      "estadio": "Etihad Stadium · Manchester"
+    },
+    {
+      "data": "2027-01-20",
+      "hora": "17:00",
+      "casa": "Lens",
+      "fora": "Manchester City",
+      "campeonato": "Champions League · fase de liga",
+      "estadio": "Stade Bollaert-Delelis · Lens"
+    },
+    {
+      "data": "2027-01-23",
+      "hora": "12:00",
+      "casa": "Brighton & Hove Albion",
+      "fora": "Manchester City",
+      "campeonato": "Premier League",
+      "estadio": "American Express Stadium · Falmer"
+    },
+    {
+      "data": "2027-01-27",
+      "hora": "17:00",
+      "casa": "Manchester City",
+      "fora": "Sporting CP",
+      "campeonato": "Champions League · fase de liga",
+      "estadio": "Etihad Stadium · Manchester"
+    },
+    {
+      "data": "2027-01-30",
+      "hora": "12:00",
+      "casa": "Manchester City",
+      "fora": "Arsenal",
+      "campeonato": "Premier League",
+      "estadio": "Etihad Stadium · Manchester"
+    },
+    {
+      "data": "2027-02-06",
+      "hora": "12:00",
+      "casa": "Fulham",
+      "fora": "Manchester City",
+      "campeonato": "Premier League",
+      "estadio": "Craven Cottage · London"
+    },
+    {
+      "data": "2027-02-10",
+      "hora": "17:00",
+      "casa": "Tottenham Hotspur",
+      "fora": "Manchester City",
+      "campeonato": "Premier League",
+      "estadio": "Tottenham Hotspur Stadium · London"
+    },
+    {
+      "data": "2027-02-20",
+      "hora": "12:00",
+      "casa": "Manchester City",
+      "fora": "Newcastle United",
+      "campeonato": "Premier League",
+      "estadio": "Etihad Stadium · Manchester"
+    },
+    {
+      "data": "2027-02-27",
+      "hora": "12:00",
+      "casa": "Hull City",
+      "fora": "Manchester City",
+      "campeonato": "Premier League",
+      "estadio": "The MKM Stadium · Hull"
+    },
+    {
+      "data": "2027-03-03",
+      "hora": "17:00",
+      "casa": "Manchester City",
+      "fora": "Everton",
+      "campeonato": "Premier League",
+      "estadio": "Etihad Stadium · Manchester"
+    },
+    {
+      "data": "2027-03-13",
+      "hora": "12:00",
+      "casa": "Coventry City",
+      "fora": "Manchester City",
+      "campeonato": "Premier League",
+      "estadio": "Coventry Building Society Arena · Coventry"
+    },
+    {
+      "data": "2027-03-20",
+      "hora": "12:00",
+      "casa": "Manchester City",
+      "fora": "Manchester United",
+      "campeonato": "Premier League",
+      "estadio": "Etihad Stadium · Manchester"
+    },
+    {
+      "data": "2027-04-10",
+      "hora": "11:00",
+      "casa": "AFC Bournemouth",
+      "fora": "Manchester City",
+      "campeonato": "Premier League",
+      "estadio": "Vitality Stadium · Bournemouth"
+    },
+    {
+      "data": "2027-04-17",
+      "hora": "11:00",
+      "casa": "Manchester City",
+      "fora": "Crystal Palace",
+      "campeonato": "Premier League",
+      "estadio": "Etihad Stadium · Manchester"
+    },
+    {
+      "data": "2027-04-24",
+      "hora": "11:00",
+      "casa": "Chelsea",
+      "fora": "Manchester City",
+      "campeonato": "Premier League",
+      "estadio": "Stamford Bridge · London"
+    },
+    {
+      "data": "2027-05-01",
+      "hora": "11:00",
+      "casa": "Manchester City",
+      "fora": "Brentford",
+      "campeonato": "Premier League",
+      "estadio": "Etihad Stadium · Manchester"
+    },
+    {
+      "data": "2027-05-08",
+      "hora": "11:00",
+      "casa": "Manchester City",
+      "fora": "Liverpool",
+      "campeonato": "Premier League",
+      "estadio": "Etihad Stadium · Manchester"
+    },
+    {
+      "data": "2027-05-15",
+      "hora": "11:00",
+      "casa": "Ipswich Town",
+      "fora": "Manchester City",
+      "campeonato": "Premier League",
+      "estadio": "Portman Road · Ipswich"
+    },
+    {
+      "data": "2027-05-23",
+      "hora": "11:00",
+      "casa": "Manchester City",
+      "fora": "Aston Villa",
+      "campeonato": "Premier League",
+      "estadio": "Etihad Stadium · Manchester"
+    },
+    {
+      "data": "2027-05-30",
+      "hora": "12:00",
+      "casa": "Sunderland",
+      "fora": "Manchester City",
+      "campeonato": "Premier League",
+      "estadio": "Stadium of Light · Sunderland"
+    }
+  ],
+  "resultados": [
+    {
+      "data": "2026-11-04",
+      "hora": "17:00",
+      "casa": "RB Leipzig",
+      "fora": "Manchester City",
+      "campeonato": "Champions League · fase de liga",
+      "estadio": "Red Bull Arena · Leipzig",
+      "placar": "2 x 3",
+      "situacao": "encerrado",
+      "resultado": "vitória"
+    },
+    {
+      "data": "2026-10-31",
+      "hora": "12:00",
+      "casa": "Manchester City",
+      "fora": "Brighton & Hove Albion",
+      "campeonato": "Premier League",
+      "estadio": "Etihad Stadium · Manchester",
+      "placar": "0 x 1",
+      "situacao": "encerrado",
+      "resultado": "derrota"
+    },
+    {
+      "data": "2026-10-28",
+      "hora": "16:30",
+      "casa": "Manchester City",
+      "fora": "Brighton & Hove Albion",
+      "campeonato": "Copa da Liga Inglesa",
+      "estadio": "Etihad Stadium · Manchester",
+      "placar": "2 x 2",
+      "situacao": "fim nos pênaltis",
+      "resultado": "empate"
+    },
+    {
+      "data": "2026-10-24",
+      "hora": "08:30",
+      "casa": "Aston Villa",
+      "fora": "Manchester City",
+      "campeonato": "Premier League",
+      "estadio": "Villa Park · Birmingham",
+      "placar": "2 x 1",
+      "situacao": "encerrado",
+      "resultado": "derrota"
+    },
+    {
+      "data": "2026-10-20",
+      "hora": "16:00",
+      "casa": "Manchester City",
+      "fora": "AEK Athens",
+      "campeonato": "Champions League · fase de liga",
+      "estadio": "Etihad Stadium · Manchester",
+      "placar": "5 x 1",
+      "situacao": "encerrado",
+      "resultado": "vitória"
+    },
+    {
+      "data": "2026-10-17",
+      "hora": "11:00",
+      "casa": "Manchester City",
+      "fora": "Ipswich Town",
+      "campeonato": "Premier League",
+      "estadio": "Etihad Stadium · Manchester",
+      "placar": "3 x 2",
+      "situacao": "encerrado",
+      "resultado": "vitória"
+    },
+    {
+      "data": "2026-10-14",
+      "hora": "16:00",
+      "casa": "Manchester City",
+      "fora": "Paris Saint-Germain",
+      "campeonato": "Champions League · fase de liga",
+      "estadio": "Etihad Stadium · Manchester",
+      "placar": "2 x 4",
+      "situacao": "encerrado",
+      "resultado": "derrota"
+    },
+    {
+      "data": "2026-10-11",
+      "hora": "12:30",
+      "casa": "Liverpool",
+      "fora": "Manchester City",
+      "campeonato": "Premier League",
+      "estadio": "Anfield · Liverpool",
+      "placar": "0 x 3",
+      "situacao": "encerrado",
+      "resultado": "vitória"
+    },
+    {
+      "data": "2026-09-20",
+      "hora": "10:00",
+      "casa": "Manchester City",
+      "fora": "Sunderland",
+      "campeonato": "Premier League",
+      "estadio": "Etihad Stadium · Manchester",
+      "placar": "5 x 3",
+      "situacao": "encerrado",
+      "resultado": "vitória"
+    },
+    {
+      "data": "2026-09-17",
+      "hora": "15:30",
+      "casa": "Manchester City",
+      "fora": "Norwich City",
+      "campeonato": "Copa da Liga Inglesa",
+      "estadio": "Etihad Stadium · Manchester",
+      "placar": "5 x 0",
+      "situacao": "encerrado",
+      "resultado": "vitória"
+    },
+    {
+      "data": "2026-09-13",
+      "hora": "12:30",
+      "casa": "Manchester United",
+      "fora": "Manchester City",
+      "campeonato": "Premier League",
+      "estadio": "Old Trafford · Manchester",
+      "placar": "0 x 1",
+      "situacao": "encerrado",
+      "resultado": "vitória"
+    },
+    {
+      "data": "2026-09-08",
+      "hora": "16:00",
+      "casa": "FC Porto",
+      "fora": "Manchester City",
+      "campeonato": "Champions League · fase de liga",
+      "estadio": "Estádio do Dragão · Porto",
+      "placar": "0 x 2",
+      "situacao": "encerrado",
+      "resultado": "vitória"
+    },
+    {
+      "data": "2026-09-05",
+      "hora": "11:00",
+      "casa": "Manchester City",
+      "fora": "Coventry City",
+      "campeonato": "Premier League",
+      "estadio": "Etihad Stadium · Manchester",
+      "placar": "1 x 0",
+      "situacao": "encerrado",
+      "resultado": "vitória"
+    },
+    {
+      "data": "2026-08-28",
+      "hora": "16:00",
+      "casa": "Crystal Palace",
+      "fora": "Manchester City",
+      "campeonato": "Premier League",
+      "estadio": "Selhurst Park · London",
+      "placar": "1 x 4",
+      "situacao": "encerrado",
+      "resultado": "vitória"
+    },
+    {
+      "data": "2026-08-23",
+      "hora": "10:00",
+      "casa": "Manchester City",
+      "fora": "AFC Bournemouth",
+      "campeonato": "Premier League",
+      "estadio": "Etihad Stadium · Manchester",
+      "placar": "2 x 1",
+      "situacao": "encerrado",
+      "resultado": "vitória"
+    },
+    {
+      "data": "2026-08-16",
+      "hora": "11:00",
+      "casa": "Arsenal",
+      "fora": "Manchester City",
+      "campeonato": "Supercopa da Inglaterra",
+      "estadio": "Principality Stadium · Cardiff",
+      "placar": "3 x 0",
+      "situacao": "encerrado",
+      "resultado": "derrota"
+    },
+    {
+      "data": "2026-08-09",
+      "hora": "08:00",
+      "casa": "Manchester City",
+      "fora": "Atlético Madrid",
+      "campeonato": "Amistoso",
+      "estadio": "Seoul World Cup Stadium · Seoul",
+      "placar": "3 x 1",
+      "situacao": "encerrado",
+      "resultado": "vitória"
+    },
+    {
+      "data": "2026-08-01",
+      "hora": "08:30",
+      "casa": "Manchester City",
+      "fora": "Internazionale",
+      "campeonato": "Amistoso",
+      "estadio": "Kai Tak Sports Park · Mongkok, Kowloon",
+      "placar": "1 x 1",
+      "situacao": "fim nos pênaltis",
+      "resultado": "empate"
+    }
+  ]
+}

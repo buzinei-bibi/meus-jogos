@@ -1,0 +1,484 @@
+{
+  "time": "Real Madrid",
+  "ao_vivo": [],
+  "proximos": [
+    {
+      "data": "2026-11-07",
+      "hora": "17:00",
+      "casa": "Valencia",
+      "fora": "Real Madrid",
+      "campeonato": "La Liga",
+      "estadio": "Mestalla Stadium · Manises"
+    },
+    {
+      "data": "2026-11-21",
+      "hora": "17:00",
+      "casa": "Real Madrid",
+      "fora": "Celta Vigo",
+      "campeonato": "La Liga",
+      "estadio": "Santiago Bernabéu · Madrid"
+    },
+    {
+      "data": "2026-11-24",
+      "hora": "17:00",
+      "casa": "Real Madrid",
+      "fora": "PSV Eindhoven",
+      "campeonato": "Champions League · fase de liga",
+      "estadio": "Santiago Bernabéu · Madrid"
+    },
+    {
+      "data": "2026-11-29",
+      "hora": "17:00",
+      "casa": "Real Madrid",
+      "fora": "Alavés",
+      "campeonato": "La Liga",
+      "estadio": "Santiago Bernabéu · Madrid"
+    },
+    {
+      "data": "2026-12-06",
+      "hora": "17:00",
+      "casa": "Athletic Club",
+      "fora": "Real Madrid",
+      "campeonato": "La Liga",
+      "estadio": "San Mamés · Bilbao"
+    },
+    {
+      "data": "2026-12-09",
+      "hora": "17:00",
+      "casa": "Arsenal",
+      "fora": "Real Madrid",
+      "campeonato": "Champions League · fase de liga",
+      "estadio": "Emirates Stadium · London"
+    },
+    {
+      "data": "2026-12-13",
+      "hora": "17:00",
+      "casa": "Real Madrid",
+      "fora": "Osasuna",
+      "campeonato": "La Liga",
+      "estadio": "Santiago Bernabéu · Madrid"
+    },
+    {
+      "data": "2026-12-20",
+      "hora": "17:00",
+      "casa": "Deportivo",
+      "fora": "Real Madrid",
+      "campeonato": "La Liga",
+      "estadio": "Riazor · La Coruña"
+    },
+    {
+      "data": "2027-01-03",
+      "hora": "17:00",
+      "casa": "Real Madrid",
+      "fora": "Getafe",
+      "campeonato": "La Liga",
+      "estadio": "Santiago Bernabéu · Madrid"
+    },
+    {
+      "data": "2027-01-10",
+      "hora": "17:00",
+      "casa": "Real Madrid",
+      "fora": "Levante",
+      "campeonato": "La Liga",
+      "estadio": "Santiago Bernabéu · Madrid"
+    },
+    {
+      "data": "2027-01-17",
+      "hora": "17:00",
+      "casa": "Málaga",
+      "fora": "Real Madrid",
+      "campeonato": "La Liga",
+      "estadio": "La Rosaleda · Malaga"
+    },
+    {
+      "data": "2027-01-19",
+      "hora": "17:00",
+      "casa": "Real Madrid",
+      "fora": "LASK Linz",
+      "campeonato": "Champions League · fase de liga",
+      "estadio": "Santiago Bernabéu · Madrid"
+    },
+    {
+      "data": "2027-01-24",
+      "hora": "17:00",
+      "casa": "Real Madrid",
+      "fora": "Real Betis",
+      "campeonato": "La Liga",
+      "estadio": "Santiago Bernabéu · Madrid"
+    },
+    {
+      "data": "2027-01-27",
+      "hora": "17:00",
+      "casa": "Shakhtar Donetsk",
+      "fora": "Real Madrid",
+      "campeonato": "Champions League · fase de liga",
+      "estadio": "Stamford Bridge · London"
+    },
+    {
+      "data": "2027-01-31",
+      "hora": "17:00",
+      "casa": "Rayo Vallecano",
+      "fora": "Real Madrid",
+      "campeonato": "La Liga",
+      "estadio": "Estadio de Vallecas · Madrid"
+    },
+    {
+      "data": "2027-02-03",
+      "hora": "16:00",
+      "casa": "Real Sociedad",
+      "fora": "Real Madrid",
+      "campeonato": "Supercopa da Espanha · semifinal",
+      "estadio": "Vodafone Park · Istanbul"
+    },
+    {
+      "data": "2027-02-07",
+      "hora": "17:00",
+      "casa": "Real Sociedad",
+      "fora": "Real Madrid",
+      "campeonato": "La Liga",
+      "estadio": "Reale Arena · San Sebastian"
+    },
+    {
+      "data": "2027-02-14",
+      "hora": "17:00",
+      "casa": "Real Madrid",
+      "fora": "Athletic Club",
+      "campeonato": "La Liga",
+      "estadio": "Santiago Bernabéu · Madrid"
+    },
+    {
+      "data": "2027-02-21",
+      "hora": "17:00",
+      "casa": "Sevilla",
+      "fora": "Real Madrid",
+      "campeonato": "La Liga",
+      "estadio": "Ramón Sánchez Pizjuán Stadium · Sevilla"
+    },
+    {
+      "data": "2027-02-28",
+      "hora": "17:00",
+      "casa": "Real Madrid",
+      "fora": "Valencia",
+      "campeonato": "La Liga",
+      "estadio": "Santiago Bernabéu · Madrid"
+    },
+    {
+      "data": "2027-03-07",
+      "hora": "17:00",
+      "casa": "Villarreal",
+      "fora": "Real Madrid",
+      "campeonato": "La Liga",
+      "estadio": "Estadio de la Cerámica · Villarreal"
+    },
+    {
+      "data": "2027-03-14",
+      "hora": "15:00",
+      "casa": "Real Madrid",
+      "fora": "Espanyol",
+      "campeonato": "La Liga",
+      "estadio": "Santiago Bernabéu · Madrid"
+    },
+    {
+      "data": "2027-03-21",
+      "hora": "15:00",
+      "casa": "Celta Vigo",
+      "fora": "Real Madrid",
+      "campeonato": "La Liga",
+      "estadio": "Balaidos · Vigo"
+    },
+    {
+      "data": "2027-04-04",
+      "hora": "15:00",
+      "casa": "Real Madrid",
+      "fora": "Atlético Madrid",
+      "campeonato": "La Liga",
+      "estadio": "Santiago Bernabéu · Madrid"
+    },
+    {
+      "data": "2027-04-11",
+      "hora": "15:00",
+      "casa": "Osasuna",
+      "fora": "Real Madrid",
+      "campeonato": "La Liga",
+      "estadio": "El Sadar · Pamplona"
+    },
+    {
+      "data": "2027-04-18",
+      "hora": "15:00",
+      "casa": "Getafe",
+      "fora": "Real Madrid",
+      "campeonato": "La Liga",
+      "estadio": "Estadio Coliseum · Getafe"
+    },
+    {
+      "data": "2027-04-21",
+      "hora": "15:00",
+      "casa": "Real Madrid",
+      "fora": "Elche",
+      "campeonato": "La Liga",
+      "estadio": "Santiago Bernabéu · Madrid"
+    },
+    {
+      "data": "2027-05-02",
+      "hora": "15:00",
+      "casa": "Levante",
+      "fora": "Real Madrid",
+      "campeonato": "La Liga",
+      "estadio": "Estadi Ciutat de València · Manises"
+    },
+    {
+      "data": "2027-05-09",
+      "hora": "15:00",
+      "casa": "Real Madrid",
+      "fora": "Barcelona",
+      "campeonato": "La Liga",
+      "estadio": "Santiago Bernabéu · Madrid"
+    },
+    {
+      "data": "2027-05-16",
+      "hora": "15:00",
+      "casa": "Real Madrid",
+      "fora": "Racing Santander",
+      "campeonato": "La Liga",
+      "estadio": "Santiago Bernabéu · Madrid"
+    },
+    {
+      "data": "2027-05-23",
+      "hora": "15:00",
+      "casa": "Alavés",
+      "fora": "Real Madrid",
+      "campeonato": "La Liga",
+      "estadio": "Mendizorrotza · Vitoria-Gasteiz"
+    },
+    {
+      "data": "2027-05-30",
+      "hora": "15:00",
+      "casa": "Real Madrid",
+      "fora": "Deportivo",
+      "campeonato": "La Liga",
+      "estadio": "Santiago Bernabéu · Madrid"
+    }
+  ],
+  "resultados": [
+    {
+      "data": "2026-11-04",
+      "hora": "14:45",
+      "casa": "AEK Athens",
+      "fora": "Real Madrid",
+      "campeonato": "Champions League · fase de liga",
+      "estadio": "OPAP Arena · Athens",
+      "placar": "2 x 3",
+      "situacao": "encerrado",
+      "resultado": "vitória"
+    },
+    {
+      "data": "2026-11-01",
+      "hora": "12:15",
+      "casa": "Racing Santander",
+      "fora": "Real Madrid",
+      "campeonato": "La Liga",
+      "estadio": "El Sardineros · Santander",
+      "placar": "0 x 3",
+      "situacao": "encerrado",
+      "resultado": "vitória"
+    },
+    {
+      "data": "2026-10-25",
+      "hora": "17:00",
+      "casa": "Barcelona",
+      "fora": "Real Madrid",
+      "campeonato": "La Liga",
+      "estadio": "Spotify Camp Nou · Barcelona",
+      "placar": "1 x 2",
+      "situacao": "encerrado",
+      "resultado": "vitória"
+    },
+    {
+      "data": "2026-10-21",
+      "hora": "16:00",
+      "casa": "Real Madrid",
+      "fora": "RB Leipzig",
+      "campeonato": "Champions League · fase de liga",
+      "estadio": "Santiago Bernabéu · Madrid",
+      "placar": "4 x 1",
+      "situacao": "encerrado",
+      "resultado": "vitória"
+    },
+    {
+      "data": "2026-10-18",
+      "hora": "16:00",
+      "casa": "Real Madrid",
+      "fora": "Sevilla",
+      "campeonato": "La Liga",
+      "estadio": "Santiago Bernabéu · Madrid",
+      "placar": "4 x 1",
+      "situacao": "encerrado",
+      "resultado": "vitória"
+    },
+    {
+      "data": "2026-10-14",
+      "hora": "16:00",
+      "casa": "AS Roma",
+      "fora": "Real Madrid",
+      "campeonato": "Champions League · fase de liga",
+      "estadio": "Olimpico · Roma",
+      "placar": "3 x 4",
+      "situacao": "encerrado",
+      "resultado": "vitória"
+    },
+    {
+      "data": "2026-10-10",
+      "hora": "16:00",
+      "casa": "Real Madrid",
+      "fora": "Villarreal",
+      "campeonato": "La Liga",
+      "estadio": "Santiago Bernabéu · Madrid",
+      "placar": "1 x 0",
+      "situacao": "encerrado",
+      "resultado": "vitória"
+    },
+    {
+      "data": "2026-09-20",
+      "hora": "11:15",
+      "casa": "Atlético Madrid",
+      "fora": "Real Madrid",
+      "campeonato": "La Liga",
+      "estadio": "Riyadh Air Metropolitano · Madrid",
+      "placar": "2 x 1",
+      "situacao": "encerrado",
+      "resultado": "derrota"
+    },
+    {
+      "data": "2026-09-15",
+      "hora": "16:30",
+      "casa": "Elche",
+      "fora": "Real Madrid",
+      "campeonato": "La Liga",
+      "estadio": "Estadio Martínez Valero · Elche",
+      "placar": "2 x 3",
+      "situacao": "encerrado",
+      "resultado": "vitória"
+    },
+    {
+      "data": "2026-09-12",
+      "hora": "16:00",
+      "casa": "Real Madrid",
+      "fora": "Rayo Vallecano",
+      "campeonato": "La Liga",
+      "estadio": "Santiago Bernabéu · Madrid",
+      "placar": "4 x 1",
+      "situacao": "encerrado",
+      "resultado": "vitória"
+    },
+    {
+      "data": "2026-09-08",
+      "hora": "16:00",
+      "casa": "Real Madrid",
+      "fora": "Internazionale",
+      "campeonato": "Champions League · fase de liga",
+      "estadio": "Santiago Bernabéu · Madrid",
+      "placar": "2 x 1",
+      "situacao": "encerrado",
+      "resultado": "vitória"
+    },
+    {
+      "data": "2026-09-04",
+      "hora": "16:00",
+      "casa": "Real Betis",
+      "fora": "Real Madrid",
+      "campeonato": "La Liga",
+      "estadio": "Estadio La Cartuja · Sevilla",
+      "placar": "1 x 0",
+      "situacao": "encerrado",
+      "resultado": "derrota"
+    },
+    {
+      "data": "2026-08-30",
+      "hora": "12:00",
+      "casa": "Real Madrid",
+      "fora": "Málaga",
+      "campeonato": "La Liga",
+      "estadio": "Santiago Bernabéu · Madrid",
+      "placar": "4 x 0",
+      "situacao": "encerrado",
+      "resultado": "vitória"
+    },
+    {
+      "data": "2026-08-26",
+      "hora": "16:00",
+      "casa": "Real Madrid",
+      "fora": "Real Sociedad",
+      "campeonato": "La Liga",
+      "estadio": "Santiago Bernabéu · Madrid",
+      "placar": "4 x 1",
+      "situacao": "encerrado",
+      "resultado": "vitória"
+    },
+    {
+      "data": "2026-08-22",
+      "hora": "16:30",
+      "casa": "Espanyol",
+      "fora": "Real Madrid",
+      "campeonato": "La Liga",
+      "estadio": "RCDE Stadium · Barcelona",
+      "placar": "1 x 2",
+      "situacao": "encerrado",
+      "resultado": "vitória"
+    },
+    {
+      "data": "2026-08-16",
+      "hora": "12:00",
+      "casa": "Schalke 04",
+      "fora": "Real Madrid",
+      "campeonato": "Amistoso",
+      "estadio": "Veltins Arena · Gelsenkirchen",
+      "placar": "0 x 3",
+      "situacao": "encerrado",
+      "resultado": "vitória"
+    },
+    {
+      "data": "2026-08-12",
+      "hora": "16:00",
+      "casa": "Deportivo",
+      "fora": "Real Madrid",
+      "campeonato": "Amistoso",
+      "estadio": "Riazor · La Coruña",
+      "placar": "0 x 1",
+      "situacao": "encerrado",
+      "resultado": "vitória"
+    },
+    {
+      "data": "2026-08-08",
+      "hora": "14:00",
+      "casa": "Ferencvaros",
+      "fora": "Real Madrid",
+      "campeonato": "Amistoso",
+      "estadio": "Groupama Arena · Budapest",
+      "placar": "1 x 2",
+      "situacao": "encerrado",
+      "resultado": "vitória"
+    },
+    {
+      "data": "2026-08-01",
+      "hora": "13:00",
+      "casa": "Real Madrid",
+      "fora": "Fiorentina",
+      "campeonato": "Amistoso",
+      "estadio": "",
+      "placar": "2 x 2",
+      "situacao": "encerrado",
+      "resultado": "empate"
+    },
+    {
+      "data": "2026-07-28",
+      "hora": "13:00",
+      "casa": "Real Madrid",
+      "fora": "Leganés",
+      "campeonato": "Amistoso",
+      "estadio": "",
+      "placar": "4 x 1",
+      "situacao": "encerrado",
+      "resultado": "vitória"
+    }
+  ]
+}

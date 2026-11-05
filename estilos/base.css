@@ -1,0 +1,160 @@
+/* base: cores, fontes, topo, botões, títulos e animações gerais */
+@property --tema {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #f39200;
+}
+@property --giro {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 0deg;
+}
+
+:root {
+  --tema: #f39200;
+  --brilho: 0.5;
+  --laranja: #f39200;
+  --fundo: #050608;
+  --cartao: rgba(20, 22, 30, 0.84);
+  --cartao-2: rgba(32, 35, 46, 0.88);
+  --borda: rgba(255, 255, 255, 0.11);
+  --borda-forte: rgba(255, 255, 255, 0.22);
+  --linha: rgba(255, 255, 255, 0.07);
+  --sombra: 0 1px 0 rgba(255, 255, 255, 0.06) inset, 0 18px 40px -18px rgba(0, 0, 0, 0.9);
+  --texto: #f4f2ec;
+  --texto-2: #b0b4be;
+  --texto-3: #7a7f8b;
+  --vitoria: #3ddc84;
+  --empate: #b8bcc6;
+  --derrota: #ff5a5f;
+  --vivo: #ff3b47;
+  --raio: 18px;
+  --fonte: 'Manrope', system-ui, sans-serif;
+  --titulo: 'Anton', 'Impact', sans-serif;
+  --mono: 'JetBrains Mono', ui-monospace, monospace;
+  --mola: cubic-bezier(.2, .9, .3, 1.2);
+  color-scheme: dark;
+  transition: --tema 0.9s ease;
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--fundo);
+  color: var(--texto);
+  font-family: var(--fonte);
+  font-size: 16px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+a { color: inherit; text-decoration: none; }
+button { font: inherit; color: inherit; text-transform: inherit; letter-spacing: inherit; }
+:focus-visible { outline: 3px solid #fff; outline-offset: 3px; border-radius: 8px; }
+
+/* ---------- topo ---------- */
+/* topo fixo que se mistura ao gradiente: leva um tom da cor do time em cima
+   e vai sumindo embaixo (sem faixa nem linha), então o conteúdo some suave por baixo dele */
+.topo {
+  position: sticky; top: 0; z-index: 10;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 12px clamp(14px, 2.5vw, 32px) 26px;
+  margin-bottom: -14px; /* o trecho que esmaece não empurra o conteúdo */
+  background: linear-gradient(180deg,
+    color-mix(in srgb, var(--tema) calc(var(--brilho) * 14%), rgba(5, 6, 8, .9)) 0%,
+    rgba(5, 6, 8, .7) 55%,
+    rgba(5, 6, 8, 0) 100%);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  -webkit-mask-image: linear-gradient(#000 calc(100% - 26px), transparent);
+  mask-image: linear-gradient(#000 calc(100% - 26px), transparent);
+}
+.marca { display: flex; align-items: center; color: var(--texto); }
+.marca-logo { width: 38px; height: 38px; overflow: visible; }
+.marca-bola { transform-origin: 17px 19px; animation: bola-gira 12s linear infinite; }
+.marca-vivo { transform-origin: 29.5px 7px; animation: vivo-pisca 1.8s ease-in-out infinite; }
+@keyframes bola-gira { to { transform: rotate(360deg); } }
+@keyframes vivo-pisca { 50% { transform: scale(.75); opacity: .6; } }
+
+.topo-acoes { display: flex; gap: 8px; }
+/* botões redondos só com ícone */
+.botao-ouvir, .botao-atualizar {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 42px; height: 42px; padding: 0; border-radius: 999px;
+  border: 1px solid var(--borda); background: var(--cartao);
+  cursor: pointer;
+  backdrop-filter: blur(18px);
+  transition: background .2s, border-color .2s, transform .15s var(--mola);
+}
+.botao-ouvir:hover, .botao-atualizar:hover { background: var(--cartao-2); border-color: var(--borda-forte); transform: translateY(-1px); }
+.botao-ouvir:active, .botao-atualizar:active { transform: scale(.94); }
+.botao-ouvir.falando { background: var(--tema); border-color: var(--tema); color: #050608; animation: falando 1.2s ease-in-out infinite; }
+.botao-ouvir.carregando { border-color: var(--tema); animation: falando 0.8s ease-in-out infinite; }
+@keyframes falando { 50% { box-shadow: 0 0 0 8px color-mix(in srgb, var(--tema) 25%, transparent); } }
+.buscando .botao-atualizar svg { animation: girar 0.9s linear infinite; }
+@keyframes girar { to { transform: rotate(360deg); } }
+
+.aviso-voz {
+  position: fixed; left: 50%; bottom: 24px; z-index: 20; transform: translateX(-50%);
+  max-width: calc(100% - 32px); padding: 12px 18px; border-radius: 14px;
+  background: var(--cartao-2); border: 1px solid var(--borda-forte); box-shadow: var(--sombra);
+  font-size: 13px; font-weight: 700; animation: subir .3s var(--mola);
+}
+@keyframes subir { from { opacity: 0; transform: translate(-50%, 12px); } }
+
+/* ---------- página e títulos ---------- */
+.pagina {
+  position: relative; z-index: 1;
+  max-width: 1160px; margin: 0 auto;
+  padding: 0 clamp(16px, 4vw, 48px) 48px;
+}
+.bloco { margin-top: 36px; }
+.bloco-hoje { margin-top: clamp(20px, 3vw, 32px); }
+.bloco-titulo {
+  display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+  margin: 0 0 12px; font-size: 13px; font-weight: 800; letter-spacing: 0.16em;
+}
+.bloco-titulo > span:first-child {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-family: var(--titulo); font-weight: 400; font-size: 24px; letter-spacing: 0.04em; line-height: 1;
+}
+.bloco-titulo > span:first-child::before {
+  content: ''; width: 6px; height: 22px; border-radius: 6px;
+  background: linear-gradient(180deg, var(--tema), color-mix(in srgb, var(--tema) 40%, transparent));
+  box-shadow: 0 0 16px color-mix(in srgb, var(--tema) 60%, transparent);
+}
+.bloco-titulo::after { content: ''; flex: 1; min-width: 24px; height: 1px; background: linear-gradient(90deg, var(--borda), transparent); order: 2; }
+.data-hoje { color: var(--texto-2); }
+.atualizado { order: 3; color: var(--texto-3); font-family: var(--mono); font-size: 12px; letter-spacing: 0.06em; }
+.aviso { color: #ffb347; }
+
+/* ---------- entrada animada (primeira carga e troca de time) ---------- */
+@keyframes entrar {
+  from { opacity: 0; transform: translateY(14px) scale(.98); }
+  to { opacity: 1; transform: none; }
+}
+.entrando .cartao, .entrando .vazio, .entrando .linha, .entrando .resultado, .entrando .chip, .entrando .painel {
+  animation: entrar .55s var(--mola) both;
+  animation-delay: calc(var(--i, 0) * 45ms);
+}
+
+/* bolinha vermelha pulsando de "ao vivo" */
+.ponto-vivo, .selo-vivo b {
+  display: inline-block; width: 7px; height: 7px; margin-right: 6px; border-radius: 50%;
+  background: var(--vivo); vertical-align: 1px;
+  box-shadow: 0 0 0 0 rgba(255, 59, 71, .7); animation: pulsar 1.6s infinite;
+}
+@keyframes pulsar {
+  70% { box-shadow: 0 0 0 8px rgba(255, 59, 71, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(255, 59, 71, 0); }
+}
+
+/* cards de vidro escuro: o gradiente aparece de leve por trás, mas o card continua destacado */
+.cartao, .painel, .chip, .vazio { backdrop-filter: blur(18px) saturate(140%); -webkit-backdrop-filter: blur(18px) saturate(140%); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
