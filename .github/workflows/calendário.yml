@@ -1,0 +1,41 @@
+# atualiza o calendário.ics com os jogos 4 vezes por dia e republica o site
+name: atualizar calendário
+
+on:
+  schedule:
+    - cron: '0 9,15,21,3 * * *' # 6h, 12h, 18h e 0h no horário de brasília
+  workflow_dispatch: # botão "run workflow" no github, pra rodar na hora
+
+permissions:
+  contents: write # pra salvar o calendário.ics no repositório
+  pages: write    # pra pedir pro github pages publicar de novo
+
+jobs:
+  calendario:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: gerar o calendário
+        run: python3 calendário.py
+
+      - name: salvar se mudou
+        id: salvar
+        run: |
+          if git diff --quiet -- calendário.ics; then
+            echo "calendário sem mudanças"
+            echo "mudou=nao" >> "$GITHUB_OUTPUT"
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add calendário.ics
+            git commit -m "atualiza o calendário dos jogos"
+            git push
+            echo "mudou=sim" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: publicar o site de novo
+        if: steps.salvar.outputs.mudou == 'sim'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api -X POST "repos/${{ github.repository }}/pages/builds"
