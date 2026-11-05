@@ -94,8 +94,8 @@
   .marca-logo { width: 30px; height: 30px; }
   .menu-secoes { top: 50px; left: 12px; }
   .topo-acoes { gap: 6px; }
-  .botao-ouvir, .botao-atualizar { width: 34px; height: 34px; }
-  .botao-ouvir svg, .botao-atualizar svg { width: 15px; height: 15px; }
+  .botao-atualizar { width: 34px; height: 34px; }
+  .botao-atualizar svg { width: 15px; height: 15px; }
   .bloco { margin-top: 28px; }
   .bloco-titulo > span:first-child { font-size: 22px; }
 

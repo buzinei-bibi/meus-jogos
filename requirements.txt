@@ -1,1 +1,1 @@
-edge-tts==7.3.1
+# sem dependências: o site e o servidor usam só o que já vem com o python

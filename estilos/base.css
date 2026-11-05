@@ -82,7 +82,7 @@ button { font: inherit; color: inherit; text-transform: inherit; letter-spacing:
 
 .topo-acoes { display: flex; gap: 8px; }
 /* botões redondos só com ícone */
-.botao-ouvir, .botao-atualizar {
+.botao-atualizar {
   display: inline-flex; align-items: center; justify-content: center;
   width: 42px; height: 42px; padding: 0; border-radius: 999px;
   border: 1px solid var(--borda); background: var(--cartao);
@@ -90,21 +90,11 @@ button { font: inherit; color: inherit; text-transform: inherit; letter-spacing:
   backdrop-filter: blur(18px);
   transition: background .2s, border-color .2s, transform .15s var(--mola);
 }
-.botao-ouvir:hover, .botao-atualizar:hover { background: var(--cartao-2); border-color: var(--borda-forte); transform: translateY(-1px); }
-.botao-ouvir:active, .botao-atualizar:active { transform: scale(.94); }
-.botao-ouvir.falando { background: var(--tema); border-color: var(--tema); color: #050608; animation: falando 1.2s ease-in-out infinite; }
-.botao-ouvir.carregando { border-color: var(--tema); animation: falando 0.8s ease-in-out infinite; }
-@keyframes falando { 50% { box-shadow: 0 0 0 8px color-mix(in srgb, var(--tema) 25%, transparent); } }
+.botao-atualizar:hover { background: var(--cartao-2); border-color: var(--borda-forte); transform: translateY(-1px); }
+.botao-atualizar:active { transform: scale(.94); }
 .buscando .botao-atualizar svg { animation: girar 0.9s linear infinite; }
 @keyframes girar { to { transform: rotate(360deg); } }
 
-.aviso-voz {
-  position: fixed; left: 50%; bottom: 24px; z-index: 20; transform: translateX(-50%);
-  max-width: calc(100% - 32px); padding: 12px 18px; border-radius: 14px;
-  background: var(--cartao-2); border: 1px solid var(--borda-forte); box-shadow: var(--sombra);
-  font-size: 13px; font-weight: 700; animation: subir .3s var(--mola);
-}
-@keyframes subir { from { opacity: 0; transform: translate(-50%, 12px); } }
 
 /* ---------- página e títulos ---------- */
 .pagina {

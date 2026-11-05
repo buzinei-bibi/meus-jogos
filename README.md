@@ -1,11 +1,10 @@
 # MEUS JOGOS
 
-agenda diária do flamengo, manchester city, real madrid e borussia dortmund: jogos de hoje com placar ao vivo, próximos jogos e últimos resultados. dados da api pública da espn, voz humana do edge-tts. custo zero.
+agenda diária do flamengo, manchester city, real madrid e borussia dortmund: jogos de hoje com placar ao vivo, próximos jogos e últimos resultados. dados da api pública da espn. custo zero.
 
 ## como abrir
 
 ```bash
-pip install edge-tts
 python servidor.py
 ```
 
@@ -16,7 +15,7 @@ depois é só abrir http://localhost:5198
 ```
 MEUS JOGOS/
 ├── index.html            a página
-├── servidor.py           serve o site, gera a voz e salva os jogos de cada time
+├── servidor.py           serve o site e salva os jogos de cada time
 ├── imagens/logo.svg      a logo (bola + ponto de ao vivo)
 ├── estilos/
 │   ├── base.css          cores, fontes, topo, botões e títulos
@@ -34,7 +33,6 @@ MEUS JOGOS/
 │   │   ├── competicoes.js nomes das competições em português
 │   │   └── arquivo.js    manda os jogos de cada time pro jogos.json da pasta dele
 │   ├── tela/             desenha cada parte da página
-│   ├── voz/narrador.js   o resumo falado
 │   └── utilidades/       datas e pedacinhos de html
 └── times/
     ├── index.js          junta os 4 times
