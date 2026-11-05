@@ -152,51 +152,14 @@ button { font: inherit; color: inherit; text-transform: inherit; letter-spacing:
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }
 
-/* ---------- menu da logo ---------- */
-.marca { padding: 0; border: 0; background: none; cursor: pointer; border-radius: 50%; transition: transform .25s var(--mola); }
-.marca:active { transform: scale(.92); }
-.marca-aberta .marca-logo { filter: drop-shadow(0 0 10px color-mix(in srgb, var(--tema) 70%, transparent)); }
-
-/* menu da logo: card natural, igual aos outros cards do site (vidro escuro, borda fina),
-   com um toque da cor do time na borda de cima e nas barrinhas */
-.menu-secoes {
-  position: fixed; z-index: 20; top: 58px; left: clamp(14px, 2.5vw, 32px);
-  display: grid; min-width: 210px; padding: 6px;
-  background: var(--cartao-2);
-  border: 1px solid var(--borda);
-  border-top-color: color-mix(in srgb, var(--tema) 50%, var(--borda));
-  border-radius: 14px;
-  box-shadow: var(--sombra);
-  backdrop-filter: blur(18px) saturate(140%);
-  -webkit-backdrop-filter: blur(18px) saturate(140%);
-  transform-origin: top left;
-  animation: menu-abre .2s ease;
-}
-.menu-secoes[hidden] { display: none; }
-@keyframes menu-abre { from { opacity: 0; transform: translateY(-6px) scale(.97); } }
-.menu-secoes a {
-  display: flex; align-items: center; gap: 10px;
-  padding: 11px 12px; border-radius: 9px;
-  font-size: 12px; font-weight: 800; letter-spacing: .12em; color: color-mix(in srgb, var(--tema) 82%, #fff); /* nome da seção na cor do time */
-  transition: background .15s;
-}
-.menu-secoes a::before { /* barrinha na cor do time */
-  content: ''; width: 3px; height: 14px; border-radius: 3px; flex: none; background: var(--tema);
-}
-.menu-secoes a:hover, .menu-secoes a:focus-visible { background: rgba(255, 255, 255, .06); outline: none; }
-
 /* ao pular pra uma seção, o título não fica escondido embaixo do topo fixo */
 .bloco-titulo { scroll-margin-top: 70px; } /* espaço do topo fixo */
 html { scroll-behavior: smooth; }
 
-/* home (todos): títulos das seções e do menu em branco, sem cor de time */
-[data-filtro="todos"] .bloco-titulo > span:first-child,
-[data-filtro="todos"] .menu-secoes a { color: var(--texto); }
-[data-filtro="todos"] .bloco-titulo > span:first-child::before,
-[data-filtro="todos"] .menu-secoes a::before { background: var(--texto); box-shadow: none; }
+/* home (todos): títulos das seções em branco, sem cor de time */
+[data-filtro="todos"] .bloco-titulo > span:first-child { color: var(--texto); }
+[data-filtro="todos"] .bloco-titulo > span:first-child::before { background: var(--texto); box-shadow: none; }
 [data-filtro="todos"] .bloco-titulo::after { background: linear-gradient(90deg, var(--borda), transparent); }
 
-/* "meus times" só aparece na home; na página de um time some a seção e o atalho do menu
-   (pra trocar de time, use o filtro do topo) */
-[data-filtro="time"] .bloco-meus-times,
-[data-filtro="time"] .menu-meus-times { display: none; }
+/* "meus times" só aparece na home; na página de um time some (pra trocar de time, use o filtro do topo) */
+[data-filtro="time"] .bloco-meus-times { display: none; }
