@@ -1,9 +1,9 @@
 // busca os jogos na api pública da espn (sem chave, com cors liberado)
-import { times, meus } from '../../times/index.js?v=20261104223454';
-import { estado, ler, gravar } from '../estado.js?v=20261104223454';
-import { ligas, fases } from './competicoes.js?v=20261104223454';
-import { chaveDia } from '../utilidades/datas.js?v=20261104223454';
-import { buscarClassificacao } from './classificacao.js?v=20261104223454';
+import { times, meus } from '../../times/index.js';
+import { estado, ler, gravar } from '../estado.js';
+import { ligas, fases } from './competicoes.js';
+import { chaveDia } from '../utilidades/datas.js';
+import { buscarClassificacao } from './classificacao.js';
 
 const base = 'https://site.api.espn.com/apis/site/v2/sports/soccer/all';
 

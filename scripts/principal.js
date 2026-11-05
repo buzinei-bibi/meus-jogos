@@ -1,9 +1,9 @@
 // meus jogos — ponto de partida: liga os botões e mantém tudo atualizado
-import { estado, trocarFiltro } from './estado.js?v=20261104223454';
-import { buscarTudo, carregarCache } from './dados/espn.js?v=20261104223454';
-import { temJogoQuente } from './dados/jogos.js?v=20261104223454';
-import { salvarPorTime } from './dados/arquivo.js?v=20261104223454';
-import { desenhar } from './tela/pagina.js?v=20261104223454';
+import { estado, trocarFiltro } from './estado.js';
+import { buscarTudo, carregarCache } from './dados/espn.js';
+import { temJogoQuente } from './dados/jogos.js';
+import { salvarPorTime } from './dados/arquivo.js';
+import { desenhar } from './tela/pagina.js';
 
 let timerBusca = null;
 let primeiraBusca = true;

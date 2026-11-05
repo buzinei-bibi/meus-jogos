@@ -1,7 +1,7 @@
 // regras sobre os jogos: o que é de hoje, próximos, resultados, vitória/empate/derrota
-import { estado } from '../estado.js?v=20261104223454';
-import { meus } from '../../times/index.js?v=20261104223454';
-import { chaveDia, hora } from '../utilidades/datas.js?v=20261104223454';
+import { estado } from '../estado.js';
+import { meus } from '../../times/index.js';
+import { chaveDia, hora } from '../utilidades/datas.js';
 
 export const nomeResultado = { v: 'vitória', e: 'empate', d: 'derrota' };
 const ordenar = (a, b) => a.data - b.data;

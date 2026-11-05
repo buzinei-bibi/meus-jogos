@@ -1,9 +1,9 @@
 // salva os jogos de cada time na pasta dele (times/flamengo/jogos.json e por aí vai)
 // só funciona quando o site roda pelo servidor.py; se não tiver servidor, ignora em silêncio
-import { times } from '../../times/index.js?v=20261104223454';
-import { estado } from '../estado.js?v=20261104223454';
-import { resultadoPara, nomeResultado, situacaoTexto } from './jogos.js?v=20261104223454';
-import { chaveDia, hora } from '../utilidades/datas.js?v=20261104223454';
+import { times } from '../../times/index.js';
+import { estado } from '../estado.js';
+import { resultadoPara, nomeResultado, situacaoTexto } from './jogos.js';
+import { chaveDia, hora } from '../utilidades/datas.js';
 
 const jaSalvo = new Map(); // evita gravar o mesmo conteúdo de novo
 // no site publicado (github pages) não tem servidor pra gravar: só tenta no seu computador

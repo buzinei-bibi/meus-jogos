@@ -1,9 +1,9 @@
 // seção "classificação": posição de cada time no campeonato nacional.
 // com um time escolhido no filtro, abre também a disputa: quem está colado na tabela (pro líder, o 2º colocado)
-import { estado } from '../estado.js?v=20261104223454';
-import { times } from '../../times/index.js?v=20261104223454';
-import { esc } from '../utilidades/html.js?v=20261104223454';
-import { vizinhosNaTabela } from '../dados/classificacao.js?v=20261104223454';
+import { estado } from '../estado.js';
+import { times } from '../../times/index.js';
+import { esc } from '../utilidades/html.js';
+import { vizinhosNaTabela } from '../dados/classificacao.js';
 
 // "1º" com o "o" pequeno, no alto e sublinhado, como se escreve à mão
 const ordinal = (n, classe = '') => `<span class="ordinal ${classe}"><span class="ordinal-num">${n}</span><span class="ordinal-o">o</span></span>`;

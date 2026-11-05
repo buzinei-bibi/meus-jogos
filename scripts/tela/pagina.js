@@ -1,14 +1,14 @@
 // redesenha a página inteira com o estado atual
-import { estado } from '../estado.js?v=20261104223454';
-import { meus, todos } from '../../times/index.js?v=20261104223454';
-import { esc } from '../utilidades/html.js?v=20261104223454';
-import { fmtDiaLongo, hora } from '../utilidades/datas.js?v=20261104223454';
-import { separar } from '../dados/jogos.js?v=20261104223454';
-import { desenharHoje } from './hoje.js?v=20261104223454';
-import { desenharTimes } from './times.js?v=20261104223454';
-import { desenharClassificacao } from './classificacao.js?v=20261104223454';
-import { desenharProximos } from './proximos.js?v=20261104223454';
-import { desenharResultados } from './resultados.js?v=20261104223454';
+import { estado } from '../estado.js';
+import { meus, todos } from '../../times/index.js';
+import { esc } from '../utilidades/html.js';
+import { fmtDiaLongo, hora } from '../utilidades/datas.js';
+import { separar } from '../dados/jogos.js';
+import { desenharHoje } from './hoje.js';
+import { desenharTimes } from './times.js';
+import { desenharClassificacao } from './classificacao.js';
+import { desenharProximos } from './proximos.js';
+import { desenharResultados } from './resultados.js';
 
 let timerEntrada = null;
 
