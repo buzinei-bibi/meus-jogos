@@ -2,6 +2,7 @@
 export default {
   id: '819',
   nome: 'Flamengo',
+  curto: 'Flamengo', // nome curto do filtro do topo
   pasta: 'flamengo',
   liga: 'bra.1', // campeonato nacional, usado pra mostrar a posição na tabela
   cor: '#e5252a',

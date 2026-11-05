@@ -25,12 +25,15 @@ async function atualizar() {
   timerBusca = setTimeout(atualizar, temJogoQuente() ? 30e3 : 5 * 6e4);
 }
 
-document.querySelector('#filtros').addEventListener('click', (ev) => {
+// tanto o filtro do topo quanto os cards de "meus times" trocam o time escolhido
+function aoEscolherTime(ev) {
   const b = ev.target.closest('[data-time]');
   if (!b || b.dataset.time === estado.filtro) return;
   trocarFiltro(b.dataset.time);
   desenhar();
-});
+}
+document.querySelector('#filtros').addEventListener('click', aoEscolherTime);
+document.querySelector('#filtro-topo').addEventListener('click', aoEscolherTime);
 document.querySelector('#atualizar').addEventListener('click', atualizar);
 document.addEventListener('visibilitychange', () => { if (!document.hidden) atualizar(); });
 setInterval(desenhar, 30e3); // contagens regressivas andam mesmo sem buscar

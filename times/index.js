@@ -7,5 +7,5 @@ import borussiaDortmund from './borussia-dortmund/time.js';
 export const times = [flamengo, manchesterCity, realMadrid, borussiaDortmund];
 export const meus = new Map(times.map((t) => [t.id, t]));
 
-// cor e brilho do fundo quando o filtro é "todos" (laranja da marca, suavizado)
-export const todos = { cor: '#f39200', brilho: 0.5 };
+// cor e brilho do fundo quando o filtro é "todos" (vermelho da marca)
+export const todos = { cor: '#d7263d', brilho: 0.6 };

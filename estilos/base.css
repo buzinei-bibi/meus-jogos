@@ -2,7 +2,7 @@
 @property --tema {
   syntax: '<color>';
   inherits: true;
-  initial-value: #f39200;
+  initial-value: #d7263d;
 }
 @property --giro {
   syntax: '<angle>';
@@ -11,9 +11,9 @@
 }
 
 :root {
-  --tema: #f39200;
+  --tema: #d7263d;
   --brilho: 0.5;
-  --laranja: #f39200;
+  --marca: #d7263d;
   --fundo: #050608;
   --cartao: rgba(20, 22, 30, 0.84);
   --cartao-2: rgba(32, 35, 46, 0.88);
@@ -188,3 +188,10 @@ button { font: inherit; color: inherit; text-transform: inherit; letter-spacing:
 /* ao pular pra uma seção, o título não fica escondido embaixo do topo fixo */
 .bloco-titulo { scroll-margin-top: 70px; } /* espaço do topo fixo */
 html { scroll-behavior: smooth; }
+
+/* home (todos): títulos das seções e do menu em branco, sem cor de time */
+[data-filtro="todos"] .bloco-titulo > span:first-child,
+[data-filtro="todos"] .menu-secoes a { color: var(--texto); }
+[data-filtro="todos"] .bloco-titulo > span:first-child::before,
+[data-filtro="todos"] .menu-secoes a::before { background: var(--texto); box-shadow: none; }
+[data-filtro="todos"] .bloco-titulo::after { background: linear-gradient(90deg, var(--borda), transparent); }

@@ -2,6 +2,7 @@
 export default {
   id: '86',
   nome: 'Real Madrid',
+  curto: 'Real', // nome curto do filtro do topo
   pasta: 'real-madrid',
   liga: 'esp.1', // campeonato nacional, usado pra mostrar a posição na tabela
   cor: '#f2c14e',
