@@ -6,6 +6,8 @@ import { resultadoPara, nomeResultado, situacaoTexto } from './jogos.js';
 import { chaveDia, hora } from '../utilidades/datas.js';
 
 const jaSalvo = new Map(); // evita gravar o mesmo conteúdo de novo
+// no site publicado (github pages) não tem servidor pra gravar: só tenta no seu computador
+const noComputador = ['localhost', '127.0.0.1'].includes(location.hostname);
 
 function jogoLegivel(e, timeId) {
   const jogo = {
@@ -26,6 +28,7 @@ function jogoLegivel(e, timeId) {
 }
 
 export async function salvarPorTime() {
+  if (!noComputador) return;
   const todos = [...estado.eventos.values()];
   await Promise.allSettled(times.map(async (t) => {
     const deste = todos.filter((e) => e.meus.includes(t.id));
