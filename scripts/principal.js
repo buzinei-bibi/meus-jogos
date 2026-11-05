@@ -24,7 +24,7 @@ async function atualizar() {
   timerBusca = setTimeout(atualizar, temJogoQuente() ? 30e3 : 5 * 6e4);
 }
 
-// tanto o filtro do topo quanto os cards de "meus times" trocam o time escolhido
+// os cards de "meus times" trocam o time escolhido
 function aoEscolherTime(ev) {
   const b = ev.target.closest('[data-time]');
   if (!b || b.dataset.time === estado.filtro) return;
@@ -32,7 +32,12 @@ function aoEscolherTime(ev) {
   desenhar();
 }
 document.querySelector('#filtros').addEventListener('click', aoEscolherTime);
-document.querySelector('#filtro-topo').addEventListener('click', aoEscolherTime);
+// a logo volta pra home (todos os times), sem recarregar a página
+document.querySelector('#ir-home').addEventListener('click', (ev) => {
+  ev.preventDefault();
+  if (estado.filtro !== 'todos') { trocarFiltro('todos'); desenhar(); }
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
 document.querySelector('#atualizar').addEventListener('click', atualizar);
 document.addEventListener('visibilitychange', () => { if (!document.hidden) atualizar(); });
 setInterval(desenhar, 30e3); // contagens regressivas andam mesmo sem buscar

@@ -26,8 +26,8 @@
   </div>
 
   <header class="topo">
-    <!-- logo: bola de futebol + bolinha "ao vivo" = acompanhar os jogos -->
-    <div class="marca" role="img" aria-label="meus jogos">
+    <!-- logo: bola de futebol + bolinha "ao vivo" = acompanhar os jogos. tocar nela volta pra home -->
+    <a class="marca" id="ir-home" href="./" aria-label="meus jogos, voltar para a home">
       <svg class="marca-logo" viewBox="0 0 36 36" fill="none" aria-hidden="true">
         <defs>
           <clipPath id="corte-logo"><circle cx="17" cy="19" r="11.8"/></clipPath>
@@ -50,7 +50,7 @@
         </g>
         <circle class="marca-vivo" cx="29.5" cy="7" r="4.5" fill="var(--vivo)" stroke="var(--fundo)" stroke-width="2.5"/>
       </svg>
-    </div>
+    </a>
     <div class="topo-acoes">
       <button class="botao-atualizar" id="atualizar" type="button" aria-label="atualizar agora" title="atualizar agora">
         <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M17.65 6.35A7.95 7.95 0 0 0 12 4a8 8 0 1 0 7.73 10h-2.08A6 6 0 1 1 12 6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/></svg>
@@ -60,9 +60,6 @@
 
 
   <main class="pagina">
-    <!-- filtro rápido de times no começo da home -->
-    <nav class="filtro-topo" id="filtro-topo" aria-label="escolher time"></nav>
-
     <section class="bloco bloco-hoje" aria-labelledby="t-hoje">
       <h2 class="bloco-titulo" id="t-hoje">
         <span>hoje</span>

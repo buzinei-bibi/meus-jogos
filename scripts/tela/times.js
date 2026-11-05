@@ -30,16 +30,3 @@ export function desenharTimes() {
   });
   document.querySelector('#filtros').innerHTML = cards.join('');
 }
-
-// filtro rápido no topo da home: todos + os 4 times, cada um com escudo e nome curto
-export function desenharFiltroTopo() {
-  const opcao = (id, cor, conteudo, rotulo) => `
-    <button class="filtro-opcao ${estado.filtro === id ? 'filtro-ativo' : ''}" data-time="${id}" type="button"
-            style="--cor:${cor}" aria-pressed="${estado.filtro === id}" aria-label="${esc(rotulo)}">${conteudo}</button>`;
-  const icone = '<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z"/></svg>';
-  document.querySelector('#filtro-topo').innerHTML =
-    opcao('todos', todos.cor, `${icone}<span>todos</span>`, 'todos os times')
-    + times.map((t) => opcao(t.id, t.cor,
-      `<img class="escudo" src="https://a.espncdn.com/i/teamlogos/soccer/500-dark/${t.id}.png" onerror="this.src='https://a.espncdn.com/i/teamlogos/soccer/500/${t.id}.png'" alt="" width="22" height="22"><span>${esc(t.curto || t.nome)}</span>`,
-      t.nome)).join('');
-}

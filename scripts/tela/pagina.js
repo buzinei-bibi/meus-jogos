@@ -5,7 +5,7 @@ import { esc } from '../utilidades/html.js';
 import { fmtDiaLongo, hora } from '../utilidades/datas.js';
 import { separar } from '../dados/jogos.js';
 import { desenharHoje } from './hoje.js';
-import { desenharTimes, desenharFiltroTopo } from './times.js';
+import { desenharTimes } from './times.js';
 import { desenharClassificacao } from './classificacao.js';
 import { desenharProximos } from './proximos.js';
 import { desenharResultados } from './resultados.js';
@@ -36,7 +36,6 @@ export function desenhar() {
     estado.animarEntrada = false;
   }
 
-  desenharFiltroTopo();
   desenharHoje(doDia, proximos[0]);
   desenharTimes();
   desenharClassificacao();

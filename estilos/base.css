@@ -161,5 +161,5 @@ html { scroll-behavior: smooth; }
 [data-filtro="todos"] .bloco-titulo > span:first-child::before { background: var(--texto); box-shadow: none; }
 [data-filtro="todos"] .bloco-titulo::after { background: linear-gradient(90deg, var(--borda), transparent); }
 
-/* "meus times" só aparece na home; na página de um time some (pra trocar de time, use o filtro do topo) */
+/* "meus times" só aparece na home; na página de um time some (a logo volta pra home) */
 [data-filtro="time"] .bloco-meus-times { display: none; }
