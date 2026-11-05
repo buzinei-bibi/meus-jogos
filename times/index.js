@@ -1,8 +1,8 @@
 // junta os 4 times. pra trocar ou adicionar um time: crie a pasta dele com um time.js e importe aqui.
-import flamengo from './flamengo/time.js';
-import manchesterCity from './manchester-city/time.js';
-import realMadrid from './real-madrid/time.js';
-import borussiaDortmund from './borussia-dortmund/time.js';
+import flamengo from './flamengo/time.js?v=20261104223454';
+import manchesterCity from './manchester-city/time.js?v=20261104223454';
+import realMadrid from './real-madrid/time.js?v=20261104223454';
+import borussiaDortmund from './borussia-dortmund/time.js?v=20261104223454';
 
 export const times = [flamengo, manchesterCity, realMadrid, borussiaDortmund];
 export const meus = new Map(times.map((t) => [t.id, t]));

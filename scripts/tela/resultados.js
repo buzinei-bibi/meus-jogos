@@ -1,8 +1,8 @@
 // tabela dos últimos resultados
-import { estado } from '../estado.js';
-import { esc, dataBloco } from '../utilidades/html.js';
-import { resultadoPara, nomeResultado, corDe } from '../dados/jogos.js';
-import { ladoDoJogo } from './proximos.js';
+import { estado } from '../estado.js?v=20261104223454';
+import { esc, dataBloco } from '../utilidades/html.js?v=20261104223454';
+import { resultadoPara, nomeResultado, corDe } from '../dados/jogos.js?v=20261104223454';
+import { ladoDoJogo } from './proximos.js?v=20261104223454';
 
 function linha(e, i) {
   const meuId = estado.filtro !== 'todos' ? estado.filtro : e.meus[0];

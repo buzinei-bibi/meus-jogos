@@ -1,9 +1,9 @@
 // meus jogos — ponto de partida: liga os botões e mantém tudo atualizado
-import { estado, trocarFiltro } from './estado.js';
-import { buscarTudo, carregarCache } from './dados/espn.js';
-import { temJogoQuente } from './dados/jogos.js';
-import { salvarPorTime } from './dados/arquivo.js';
-import { desenhar } from './tela/pagina.js';
+import { estado, trocarFiltro } from './estado.js?v=20261104223454';
+import { buscarTudo, carregarCache } from './dados/espn.js?v=20261104223454';
+import { temJogoQuente } from './dados/jogos.js?v=20261104223454';
+import { salvarPorTime } from './dados/arquivo.js?v=20261104223454';
+import { desenhar } from './tela/pagina.js?v=20261104223454';
 
 let timerBusca = null;
 let primeiraBusca = true;
@@ -31,14 +31,15 @@ function aoEscolherTime(ev) {
   trocarFiltro(b.dataset.time);
   desenhar();
 }
-document.querySelector('#filtros').addEventListener('click', aoEscolherTime);
+// o ?. evita travar o site inteiro se alguma parte da página não existir
+document.querySelector('#filtros')?.addEventListener('click', aoEscolherTime);
 // a logo volta pra home (todos os times), sem recarregar a página
-document.querySelector('#ir-home').addEventListener('click', (ev) => {
+document.querySelector('#ir-home')?.addEventListener('click', (ev) => {
   ev.preventDefault();
   if (estado.filtro !== 'todos') { trocarFiltro('todos'); desenhar(); }
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
-document.querySelector('#atualizar').addEventListener('click', atualizar);
+document.querySelector('#atualizar')?.addEventListener('click', atualizar);
 document.addEventListener('visibilitychange', () => { if (!document.hidden) atualizar(); });
 setInterval(desenhar, 30e3); // contagens regressivas andam mesmo sem buscar
 

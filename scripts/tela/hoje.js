@@ -1,9 +1,9 @@
 // cards dos jogos de hoje (placar em formato de tv: um time por linha)
-import { estado } from '../estado.js';
-import { meus } from '../../times/index.js';
-import { esc, escudo, nomeTodo } from '../utilidades/html.js';
-import { hora, falta, diaRelativo } from '../utilidades/datas.js';
-import { resultadoPara, situacaoTexto, foraDoAr, corDe, ligaTexto } from '../dados/jogos.js';
+import { estado } from '../estado.js?v=20261104223454';
+import { meus } from '../../times/index.js?v=20261104223454';
+import { esc, escudo, nomeTodo } from '../utilidades/html.js?v=20261104223454';
+import { hora, falta, diaRelativo } from '../utilidades/datas.js?v=20261104223454';
+import { resultadoPara, situacaoTexto, foraDoAr, corDe, ligaTexto } from '../dados/jogos.js?v=20261104223454';
 
 function cartao(e, i) {
   const vivo = e.estado === 'in';

@@ -1,9 +1,9 @@
 // cards de "meus times" (servem de filtro): nome, dia/hora e contra quem joga
-import { estado } from '../estado.js';
-import { times, todos } from '../../times/index.js';
-import { esc, escudo, nomeTodo } from '../utilidades/html.js';
-import { hora, diaRelativo } from '../utilidades/datas.js';
-import { proximoDe } from '../dados/jogos.js';
+import { estado } from '../estado.js?v=20261104223454';
+import { times, todos } from '../../times/index.js?v=20261104223454';
+import { esc, escudo, nomeTodo } from '../utilidades/html.js?v=20261104223454';
+import { hora, diaRelativo } from '../utilidades/datas.js?v=20261104223454';
+import { proximoDe } from '../dados/jogos.js?v=20261104223454';
 
 export function desenharTimes() {
   const cards = [`

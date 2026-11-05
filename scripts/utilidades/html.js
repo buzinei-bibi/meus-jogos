@@ -1,5 +1,5 @@
 // pedacinhos de html reaproveitados em várias partes da tela
-import { diaRelativo, fmtSemanaCurta, fmtDiaMes } from './datas.js';
+import { diaRelativo, fmtSemanaCurta, fmtDiaMes } from './datas.js?v=20261104223454';
 
 export function esc(texto) {
   return String(texto ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));

@@ -1,8 +1,8 @@
 // tabela dos próximos jogos
-import { esc, escudo, nomeTodo, dataBloco } from '../utilidades/html.js';
-import { hora, falta } from '../utilidades/datas.js';
-import { situacaoTexto, foraDoAr, corDe } from '../dados/jogos.js';
-import { meus } from '../../times/index.js';
+import { esc, escudo, nomeTodo, dataBloco } from '../utilidades/html.js?v=20261104223454';
+import { hora, falta } from '../utilidades/datas.js?v=20261104223454';
+import { situacaoTexto, foraDoAr, corDe } from '../dados/jogos.js?v=20261104223454';
+import { meus } from '../../times/index.js?v=20261104223454';
 
 export function ladoDoJogo(l, pos, tam = 22) {
   const meu = meus.has(l.id) ? 'lado-meu' : '';
